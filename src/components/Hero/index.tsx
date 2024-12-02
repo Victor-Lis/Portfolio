@@ -27,13 +27,13 @@ export default function Hero() {
         data-aos="fade-right"
       >
         <div className="w-full mb-20 max-[1000px]:mb-8">
-          <h1 className={"max-[700px]:text-6xl uppercase text-secondary text-8xl bebas-neue"}>
+          <h1 className={"uppercase text-secondary text-8xl bebas-neue max-[700px]:text-6xl"}>
             Victor Lis Bronzo
           </h1>
-          <h2 className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular">
-            Desenvolvedor Web <strong className="text-secondary">/</strong> Front-End
+          <h2 className="text-tertiary text-4xl exo-2-regular max-[700px]:text-2xl">
+            Dev Web <strong className="text-secondary">/</strong> Front-End
           </h2>
-          <h2 className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular">
+          <h2 className="text-tertiary text-4xl exo-2-regular max-[700px]:text-2xl">
             {getMyAge} anos.
           </h2>
         </div>
