@@ -49,11 +49,11 @@ export default function Techs() {
 
   return (
     <div
-      className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,100%_0%,90%_100%,0%_100%)"
+      className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,100%_0%,90%_100%,0%_100%) max-[1000px]:px-4 max-[1000px]:py-4"
     >
       <Swiper
         autoplay={{
-          delay: 2500,
+          delay: 1500,
           disableOnInteraction: false,
         }}
         navigation={{

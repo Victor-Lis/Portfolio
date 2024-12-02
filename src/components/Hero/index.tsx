@@ -31,6 +31,9 @@ export default function Hero() {
             Victor Lis Bronzo
           </h1>
           <h2 className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular">
+            Desenvolvedor Web <strong className="text-secondary">/</strong> Front-End
+          </h2>
+          <h2 className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular">
             {getMyAge} anos.
           </h2>
         </div>
