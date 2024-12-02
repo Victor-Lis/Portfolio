@@ -22,15 +22,15 @@ export default function AboutMe() {
       <Section aosData="fade-left">
         <h1
           className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48"
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-11/12 min-w-48"
           }
         >
           Tecnologia
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-sm:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-11/12 min-w-48 max-sm:hidden">
           Sempre fui um apaixonado assíduo por qualquer tecnologia e inovação, quando mais novo adorava jogar videogames e imaginar como era o processo para seu desenvolvimento
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-11/12 min-w-48 mt-4">
           Após minha entrada na Etec Prof. Carmine Biagio Tundisi, onde realizei meu curso técnico em Desenvolvimento de Sistemas de 2022 até 2024, vi que esse mundo era muito mais complexo, com isso ao invés de me assustar ou afastar, me apaixonei ainda mais, já tendo desenvolvido até aqui: {" "}
           <a
             target="_blank"
@@ -65,19 +65,19 @@ export default function AboutMe() {
             APIs
           </a>...
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4 max-sm:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-11/12 min-w-48 mt-4 max-sm:hidden">
         Mas minha paixão mesmo é para o lado que interage com o usúario, entender os pensamentos que passam por sua cabeça, quais padrões, cores e tipografias usar, portanto gosto mais do lado Front-End, mas não tenho nenhum problema em ler, estudar e desenvolver outras stacks (até fora da programação).
         </p>
       </Section>
       <Section aosData="fade-right">
         <h1
           className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48"
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-11/12 min-w-48"
           }
         >
           TCC
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-11/12 min-w-48">
           O{" "}
           <a
             target="_blank"
@@ -114,15 +114,15 @@ export default function AboutMe() {
       <Section aosData="fade-left">
         <h1
           className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48"
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-11/12 min-w-48"
           }
         >
           Mundo Acadêmico
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-sm:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-11/12 min-w-48 max-sm:hidden">
           Após algumas experiências em escrever conteúdos utilizando a linguagem acadêmica e por consequência conhecer mais sobre esse mundo, tenho em meus pensamentos foco para uma carreira profissional voltada a tecnologia, mas também surgiu como um forte interesse da minha parte a evolução acadêmica.
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-11/12 min-w-48 mt-4">
           É perceptivel a evolução da habilidade e prática do grupo falando de mundo acadêmico quando observamos a diferença entre as produções para {" "}
           <a
             target="_blank"
