@@ -30,6 +30,9 @@ import Drizzle from "@/assets/Icons/drizzle.svg";
 import PostgreSQL from '@/assets/Icons/postgresql.svg'
 import SQL from '@/assets/Icons/SQL.svg'
 
+import Firebase from '@/assets/Icons/firebase.svg'
+import Supabase from '@/assets/Icons/supabase.svg'
+
 import Git from '@/assets/Icons/git.svg'
 import Github from '@/assets/Icons/github.svg'
 
@@ -164,6 +167,26 @@ export default function Techs() {
             src={SQL}
           />
           <h2 className="text-3xl text-tertiary ml-2">SQL</h2>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            alt="Firebase"
+            width={100}
+            height={100}
+            className="h-20 w-20"
+            src={Firebase}
+          />
+          <h2 className="text-3xl text-tertiary ml-2">Firebase</h2>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            alt="Supabase"
+            width={100}
+            height={100}
+            className="h-20 w-20"
+            src={Supabase}
+          />
+          <h2 className="text-3xl text-tertiary ml-2">Supabase</h2>
         </SwiperSlide>
         <SwiperSlide>
           <Image
