@@ -35,9 +35,12 @@ import Github from '@/assets/Icons/github.svg'
 
 export default function Techs() {
 
-  const getSlidesPerView = () => window.innerWidth > 1350? 4 : window.innerWidth > 915 ? 3 : window.innerWidth > 650 ? 2 : 1
-
+  const [slidesPerView, setSlidesPerView] = useState<number>(0)
+  
   useEffect(() => {
+    const getSlidesPerView = () => window.innerWidth > 1350? 4 : window.innerWidth > 915 ? 3 : window.innerWidth > 650 ? 2 : 1
+    setSlidesPerView(getSlidesPerView())
+
     Aos.init();
   }, []);
 
@@ -53,7 +56,7 @@ export default function Techs() {
         navigation={{
           enabled: false,
         }}
-        slidesPerView={getSlidesPerView()}
+        slidesPerView={slidesPerView}
         modules={[Autoplay, Navigation]}
         className="w-full h-full"
         data-aos={"fade-right"}
