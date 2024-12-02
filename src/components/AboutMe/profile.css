@@ -1,0 +1,11 @@
+.profile-photo{
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.no-clip{
+  clip-path: none;
+}
+
+.profile-photo-left{
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+}

@@ -9,9 +9,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#2b2d42",
+        secondary: "#32de8a",
+        tertiary: "#FBFBFB",
+        quaternary: "#E71D36",
+        fifth: "#226CE0",
       },
+      minHeight: {
+        "section-common": "90svh",
+      },
+      height: {
+        "section-common": "90svh",
+      },
+      clip: {
+        "profile-photo": "polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);"
+      }
     },
   },
   plugins: [],
