@@ -119,11 +119,11 @@ export default function AboutMe() {
         >
           Mundo Acadêmico
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-sm:hidden">
           Após algumas experiências em escrever conteúdos utilizando a linguagem acadêmica e por consequência conhecer mais sobre esse mundo, tenho em meus pensamentos foco para uma carreira profissional voltada a tecnologia, mas também surgiu como um forte interesse da minha parte a evolução acadêmica.
         </p>
         <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4">
-          Inclusive, é perceptivel a evolução da habilidade e prática do grupo falando de mundo acadêmico quando observamos a diferença entre as produções para {" "}
+          É perceptivel a evolução da habilidade e prática do grupo falando de mundo acadêmico quando observamos a diferença entre as produções para {" "}
           <a
             target="_blank"
             rel="noreferrer"
