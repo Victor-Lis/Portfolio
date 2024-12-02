@@ -21,12 +21,12 @@ export default function Hero() {
     new Date().getFullYear() - new Date("2007-02-16T23:50:00").getFullYear();
 
   return (
-    <div className="max-[1000px]:flex-col max-[1000px]:justify-start w-full min-h-section-common bg-primary px-14 py-10 flex items-center justify-between max-[500px]:px-4 border-secondary border-l-8">
+    <div className="max-[1000px]:flex-col max-[1000px]:justify-start w-full min-h-section-common bg-primary px-14 py-10 flex items-center justify-between max-[1000px]:px-4 max-[1000px]:py-4 border-secondary border-l-8">
       <div
-        className="max-[1000px]:mr-auto max-[1000px]:my-20 flex flex-col justify-start items-start h-10/12 min-[1000px]:w-6/12"
+        className="max-[1000px]:mr-auto max-[1000px]:my-14 flex flex-col justify-start items-start h-10/12 min-[1000px]:w-6/12"
         data-aos="fade-right"
       >
-        <div className="w-full mb-20">
+        <div className="w-full mb-20 max-[1000px]:mb-8">
           <h1 className={"max-[700px]:text-6xl uppercase text-secondary text-8xl bebas-neue"}>
             Victor Lis Bronzo
           </h1>
@@ -40,7 +40,7 @@ export default function Hero() {
         </h2>
       </div>
       <div
-        className="max-[1000px]:my-20 max-[1000px]:justify-start max-[1000px]:items-start flex flex-col justify-end items-end h-10/12 min-[1000px]:w-6/12 min-[1000px]:flex"
+        className="max-[1000px]:my-14 max-[1000px]:justify-start max-[1000px]:items-start flex flex-col justify-end items-end h-10/12 min-[1000px]:w-6/12 min-[1000px]:flex"
         data-aos="fade-left"
         data-aos-delay="600"
       >
