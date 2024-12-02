@@ -25,10 +25,10 @@ import StyledComponents from "@/assets/Icons/styled-components.svg";
 
 import NextJS from "@/assets/Icons/nextjs.svg";
 import Prisma from "@/assets/Icons/prisma.svg";
-import Drizzle from "@/assets/Icons/Drizzle.svg";
+import Drizzle from "@/assets/Icons/drizzle.svg";
 
 import PostgreSQL from '@/assets/Icons/postgresql.svg'
-import SQL from '@/assets/Icons/sql.svg'
+import SQL from '@/assets/Icons/SQL.svg'
 
 import Git from '@/assets/Icons/git.svg'
 import Github from '@/assets/Icons/github.svg'
@@ -43,7 +43,7 @@ export default function Techs() {
 
   return (
     <div
-      className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 cursor-grab clip-path:polygon(10%_0%,100%_0%,90%_100%,0%_100%)"
+      className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,100%_0%,90%_100%,0%_100%)"
     >
       <Swiper
         autoplay={{
