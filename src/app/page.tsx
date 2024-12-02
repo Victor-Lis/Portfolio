@@ -6,14 +6,6 @@ export default function Home() {
     <div className="flex flex-col w-full overflow-x-hidden">
       <Hero/>
       <AboutMe/>
-      <Hero/>
-      <AboutMe/>
-      <Hero/>
-      <AboutMe/>
-      <Hero/>
-      <AboutMe/>
-      <Hero/>
-      <AboutMe/>
     </div>
   );
 }
