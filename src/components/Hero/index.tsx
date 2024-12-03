@@ -24,7 +24,7 @@ export default function Hero() {
     new Date().getFullYear() - new Date("2007-02-16T23:50:00").getFullYear();
 
   return (
-    <div className="w-full min-h-section-common bg-primary px-14 pb-7 pt-3 max-[850px]:px-4 max-[850px]:py-4 border-secondary border-l-8">
+    <div className="w-full min-h-section-common bg-primary px-14 pb-5 pt-3 max-[850px]:px-4 max-[850px]:py-4 border-secondary border-l-8">
       <div 
         className="w-full flex items-center justify-center gap-x-10 gap-y-4 mb-5 max-[500px]:items-start max-[500px]:flex-col"
         data-aos="fade-down"
