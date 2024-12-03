@@ -24,13 +24,13 @@ export default function Hero() {
     new Date().getFullYear() - new Date("2007-02-16T23:50:00").getFullYear();
 
   return (
-    <div className="w-full min-h-section-common bg-primary px-14 pb-5 pt-3 max-[850px]:px-4 max-[850px]:py-4 border-secondary border-l-8">
+    <div className="w-full min-h-section-common bg-primary px-14 pb-7 pt-3 max-[850px]:px-4 max-[850px]:py-4 border-secondary border-l-8">
       <div 
         className="w-full flex items-center justify-center gap-x-10 gap-y-4 mb-5 max-[500px]:items-start max-[500px]:flex-col"
         data-aos="fade-down"
       >
         <a
-          className="flex items-center justify-center gap-x-1"
+          className="flex items-center justify-center gap-x-1 hover:opacity-80 duration-150 cursor-pointer"
           target="_blank"
           rel="noreferrer"
           href="https://www.linkedin.com/in/victor-lis-bronzo"
@@ -46,7 +46,7 @@ export default function Hero() {
           </h2>
         </a>
         <a
-          className="flex items-center justify-center gap-x-1"
+          className="flex items-center justify-center gap-x-1 hover:opacity-80 duration-150 cursor-pointer"
           target="_blank"
           rel="noreferrer"
           href="https://www.github.com/Victor-Lis"
@@ -96,7 +96,7 @@ export default function Hero() {
             src={ProfilePhoto}
             height={2000}
             width={2000}
-            className="min-w-72 w-7/12 max-w-5xl rounded min-[850px]:[clip-path:polygon(10%_0%,100%_0%,90%_100%,0%_100%)]"
+            className="min-w-72 w-7/12 max-w-5xl min-[850px]:[clip-path:polygon(10%_0%,100%_0%,90%_100%,0%_100%)]"
           />
           <h2 className="min-w-72 w-7/12 text-tertiary max-[850px]:text-2xl min-[850px]:text-xl">
             Meu{" "}
