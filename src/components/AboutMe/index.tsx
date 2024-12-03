@@ -27,7 +27,7 @@ export default function AboutMe() {
         >
           Tecnologia
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-sm:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-xl:hidden">
           Sempre fui um apaixonado assíduo por qualquer tecnologia e inovação,
           quando mais novo adorava jogar videogames e imaginar como era o
           processo para seu desenvolvimento
@@ -101,7 +101,7 @@ export default function AboutMe() {
           </a>
           ...
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4 max-sm:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4 max-lg:hidden">
           Mas minha paixão mesmo é para o lado que interage com o usúario,
           entender os pensamentos que passam por sua cabeça, quais padrões,
           cores e tipografias usar, portanto gosto mais do lado Front-End, mas
@@ -160,7 +160,7 @@ export default function AboutMe() {
         >
           Mundo Acadêmico
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-sm:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-lg:hidden">
           Após algumas experiências em escrever conteúdos utilizando a linguagem
           acadêmica e por consequência conhecer mais sobre esse mundo, tenho em
           meus pensamentos foco para uma carreira profissional voltada a
