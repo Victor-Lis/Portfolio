@@ -91,6 +91,18 @@ export default function Techs() {
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
+            alt="SQL"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
+            src={SQL}
+          />
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            SQL
+          </h2>
+        </SwiperSlide>
+        <SwiperSlide className="min-h-20">
+          <Image
             alt="React Icon"
             width={50}
             height={50}
@@ -99,6 +111,18 @@ export default function Techs() {
           />
           <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
             React
+          </h2>
+        </SwiperSlide>
+        <SwiperSlide className="min-h-20">
+          <Image
+            alt="NextJS Icon"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
+            src={NextJS}
+          />
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            NextJS
           </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
@@ -129,14 +153,14 @@ export default function Techs() {
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
-            alt="NextJS Icon"
+            alt="PostgreSQL"
             width={50}
             height={50}
             className="w-16 max-[500px]:w-14"
-            src={NextJS}
+            src={PostgreSQL}
           />
           <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
-            NextJS
+            PostgreSQL
           </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
@@ -165,26 +189,14 @@ export default function Techs() {
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
-            alt="PostgreSQL"
+            alt="Supabase"
             width={50}
             height={50}
             className="w-16 max-[500px]:w-14"
-            src={PostgreSQL}
+            src={Supabase}
           />
           <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
-            PostgreSQL
-          </h2>
-        </SwiperSlide>
-        <SwiperSlide className="min-h-20">
-          <Image
-            alt="SQL"
-            width={50}
-            height={50}
-            className="w-16 max-[500px]:w-14"
-            src={SQL}
-          />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
-            SQL
+            Supabase
           </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
@@ -197,18 +209,6 @@ export default function Techs() {
           />
           <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
             Firebase
-          </h2>
-        </SwiperSlide>
-        <SwiperSlide className="min-h-20">
-          <Image
-            alt="Supabase"
-            width={50}
-            height={50}
-            className="w-16 max-[500px]:w-14"
-            src={Supabase}
-          />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
-            Supabase
           </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
