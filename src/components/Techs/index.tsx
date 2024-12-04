@@ -51,7 +51,7 @@ export default function Techs() {
   }, []);
 
   return (
-    <div className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,50%_0%,90%_50%,0%_50%) max-[500px]:px-4 max-[500px]:py-4">
+    <div className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,50%_0%,90%_50%,0%_50%) max-[850px]:px-4 max-[850px]:py-4">
       <Swiper
         autoplay={{
           delay: 1200,
