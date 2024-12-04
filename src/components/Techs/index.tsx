@@ -41,9 +41,10 @@ export default function Techs() {
 
   useEffect(() => {
     const getSlidesPerView = () =>
-      window.innerWidth > 1350
-        ? 4
-        : window.innerWidth > 915
+      // window.innerWidth > 1350
+      //   ? 4
+      //   : 
+        window.innerWidth > 915
         ? 3
         : window.innerWidth > 650
         ? 2
@@ -54,7 +55,7 @@ export default function Techs() {
   }, []);
 
   return (
-    <div className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,100%_0%,90%_100%,0%_100%) max-[1000px]:px-4 max-[1000px]:py-4">
+    <div className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,50%_0%,90%_50%,0%_50%) max-[500px]:px-4 max-[500px]:py-4">
       <Swiper
         autoplay={{
           delay: 1200,
@@ -68,152 +69,156 @@ export default function Techs() {
         className="w-full"
         data-aos={"flip-up"}
       >
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="JavaScript Icon"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={JS}
           />
-          <h2 className="text-3xl text-tertiary ml-2">JavaScript</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">JavaScript</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="TypeScript Icon"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={TS}
           />
-          <h2 className="text-3xl text-tertiary ml-2">TypeScript</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">TypeScript</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="React Icon"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={ReactIcon}
           />
-          <h2 className="text-3xl text-tertiary ml-2">React</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">React</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="Styled Components Icon"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={StyledComponents}
           />
-          <h2 className="text-3xl text-tertiary ml-2 text-left">
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl text-left">
             Styled
             <br />
             Components
           </h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="Tailwind Icon"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={Tailwind}
           />
-          <h2 className="text-3xl text-tertiary ml-2">Tailwind</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Tailwind</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="NextJS Icon"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={NextJS}
           />
-          <h2 className="text-3xl text-tertiary ml-2">NextJS</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">NextJS</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="Prisma Icon"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={Prisma}
           />
-          <h2 className="text-3xl text-tertiary ml-2">Prisma ORM</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Prisma ORM</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="Drizzle Icon"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={Drizzle}
           />
-          <h2 className="text-3xl text-tertiary ml-2">Drizzle ORM</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Drizzle ORM</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="PostgreSQL"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={PostgreSQL}
           />
-          <h2 className="text-3xl text-tertiary ml-2">PostgreSQL</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">PostgreSQL</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="SQL"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={SQL}
           />
-          <h2 className="text-3xl text-tertiary ml-2">SQL</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">SQL</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="Firebase"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={Firebase}
           />
-          <h2 className="text-3xl text-tertiary ml-2">Firebase</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Firebase</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="Supabase"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={Supabase}
           />
-          <h2 className="text-3xl text-tertiary ml-2">Supabase</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Supabase</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="Git"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={Git}
           />
-          <h2 className="text-3xl text-tertiary ml-2">Git</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Git</h2>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="min-h-20">
           <Image
             alt="GitHub"
-            width={100}
-            height={100}
-            className="h-20 w-20"
+            width={50}
+            height={50}
+            className="w-16 max-[500px]:w-14"
             src={Github}
           />
-          <h2 className="text-3xl text-tertiary ml-2">GitHub</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">GitHub</h2>
         </SwiperSlide>
       </Swiper>
-      <div className="w-full gap-x-5 gap-y-5 grid min-[500px]:grid-cols-2 min-[980px]:grid-cols-4 mt-5 min-[650px]:mt-10">
+      <div 
+        className="w-full gap-x-5 gap-y-5 grid min-[500px]:grid-cols-2 min-[980px]:grid-cols-4 mt-5 min-[650px]:mt-9 min-[1000px]:mt-12"
+        data-aos={"flip-up"}
+        data-aos-delay={"300"}
+      >
         <div>
           <h1
             className={
