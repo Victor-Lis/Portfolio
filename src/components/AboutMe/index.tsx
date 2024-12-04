@@ -6,9 +6,6 @@ import "./profile.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import localFont from "next/font/local";
-import Image from "next/image";
-
 import { useEffect } from "react";
 import Section from "./components/Section";
 
@@ -18,7 +15,7 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <div className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4">
+    <div className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-secondary/5">
       <Section aosData="fade-left">
         <h1
           className={
@@ -202,11 +199,11 @@ export default function AboutMe() {
           Tenho como meus objetivos para essa nova etapa:
         </p>
         <ul className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 list-disc marker:text-secondary">
-          <li className="w-11/12 ml-auto">
+          <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
             Ingressar em um curso tecnólogo no próximo ano, já que ainda sou muito novo e até
             aqui o tempo sempre jogou a meu favor
           </li>
-          <li className="w-11/12 ml-auto">
+          <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
             Para buscar experiência e consolidação dos meus aprendizados pretendo o quanto antes ingressar no
             meio profissional.
           </li>

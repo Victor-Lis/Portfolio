@@ -24,7 +24,7 @@ export default function Hero() {
     new Date().getFullYear() - new Date("2007-02-16T23:50:00").getFullYear();
 
   return (
-    <div className="w-full min-h-section-common bg-primary px-14 pb-7 pt-3 max-[850px]:px-4 max-[850px]:py-4 border-secondary border-l-8">
+    <div className="w-full min-h-section-common bg-primary px-14 pb-7 pt-3 max-[850px]:px-4 max-[850px]:py-4 border-secondary border-l-8 selection:bg-secondary/5">
       <div 
         className="w-full flex items-center justify-center gap-x-10 gap-y-4 mb-5 max-[500px]:items-start max-[500px]:flex-col"
         data-aos="fade-down"
@@ -41,7 +41,7 @@ export default function Hero() {
             height={36.5}
             width={36.5}
           />
-          <h2 className="text-tertiary exo-2-regular text-2xl">
+          <h2 className="text-tertiary exo-2-regular text-2xl border-b-2 border-secondary">
             Victor Lis Bronzo
           </h2>
         </a>
@@ -57,7 +57,7 @@ export default function Hero() {
             height={40}
             width={40}
           />
-          <h2 className="text-tertiary exo-2-regular text-2xl">Victor-Lis</h2>
+          <h2 className="text-tertiary exo-2-regular text-2xl selection:text-secondary border-b-2 border-secondary">Victor-Lis</h2>
         </a>
       </div>
       <div className="w-full min-h-full flex items-center justify-between max-[850px]:flex-col max-[850px]:justify-start">

@@ -38,6 +38,7 @@ import Github from "@/assets/Icons/github.svg";
 
 export default function Techs() {
   const [slidesPerView, setSlidesPerView] = useState<number>(0);
+  const [windowWidth, setWindowWidth] = useState<number>(0)
 
   useEffect(() => {
     const getSlidesPerView = () =>
@@ -45,14 +46,15 @@ export default function Techs() {
       //   ? 4
       //   :
       window.innerWidth > 915 ? 3 : window.innerWidth > 650 ? 2 : 1;
+    setWindowWidth(window.innerWidth)
     setSlidesPerView(getSlidesPerView());
 
     Aos.init();
   }, []);
 
   return (
-    <div className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,50%_0%,90%_50%,0%_50%) max-[850px]:px-4 max-[850px]:py-4">
-      <Swiper
+    <div className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,50%_0%,90%_50%,0%_50%) max-[850px]:px-4 max-[850px]:py-4 selection:bg-primary/10">
+      {/* <Swiper
         autoplay={{
           delay: 1200,
           disableOnInteraction: false,
@@ -235,9 +237,10 @@ export default function Techs() {
             GitHub
           </h2>
         </SwiperSlide>
-      </Swiper>
-      <div className="w-full gap-x-5 gap-y-5 grid min-[500px]:grid-cols-2 min-[980px]:grid-cols-4 mt-5 min-[650px]:mt-9 min-[1000px]:mt-12">
-        <div data-aos={"flip-up"} data-aos-delay={"300"}>
+      </Swiper> */}
+      {/* <div className="w-full gap-x-5 gap-y-5 grid min-[500px]:grid-cols-2 min-[980px]:grid-cols-4 mt-5 min-[650px]:mt-9 min-[1000px]:mt-12"> */}
+      <div className="w-full gap-x-5 gap-y-5 grid min-[410px]:grid-cols-2 min-[980px]:grid-cols-4">
+        <div data-aos={"flip-left"} data-aos-delay={"300"} className="order-1">
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -283,7 +286,7 @@ export default function Techs() {
             />
           </div>
         </div>
-        <div data-aos={"flip-up"} data-aos-delay={"300"}>
+        <div data-aos={"flip-left"} data-aos-delay={(windowWidth < 980 && windowWidth > 410) ? "700": "500"} className="order-2 max-[980px]:order-3 max-[410px]:order-3">
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -308,7 +311,7 @@ export default function Techs() {
             />
           </div>
         </div>
-        <div data-aos={"flip-up"} data-aos-delay={"300"}>
+        <div data-aos={"flip-left"} data-aos-delay={(windowWidth < 980 && windowWidth > 410) ? "500": "700"} className="order-3 max-[980px]:order-2 max-[410px]:order-2">
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -354,7 +357,7 @@ export default function Techs() {
             />
           </div>
         </div>
-        <div data-aos={"flip-up"} data-aos-delay={"300"}>
+        <div data-aos={"flip-left"} data-aos-delay={"900"} className="order-4">
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
