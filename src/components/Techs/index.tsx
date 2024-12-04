@@ -43,12 +43,8 @@ export default function Techs() {
     const getSlidesPerView = () =>
       // window.innerWidth > 1350
       //   ? 4
-      //   : 
-        window.innerWidth > 915
-        ? 3
-        : window.innerWidth > 650
-        ? 2
-        : 1;
+      //   :
+      window.innerWidth > 915 ? 3 : window.innerWidth > 650 ? 2 : 1;
     setSlidesPerView(getSlidesPerView());
 
     Aos.init();
@@ -77,7 +73,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={JS}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">JavaScript</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            JavaScript
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -87,7 +85,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={TS}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">TypeScript</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            TypeScript
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -97,7 +97,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={ReactIcon}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">React</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            React
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -121,7 +123,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={Tailwind}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Tailwind</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            Tailwind
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -131,7 +135,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={NextJS}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">NextJS</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            NextJS
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -141,7 +147,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={Prisma}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Prisma ORM</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            Prisma ORM
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -151,7 +159,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={Drizzle}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Drizzle ORM</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            Drizzle ORM
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -161,7 +171,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={PostgreSQL}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">PostgreSQL</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            PostgreSQL
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -171,7 +183,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={SQL}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">SQL</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            SQL
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -181,7 +195,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={Firebase}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Firebase</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            Firebase
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -191,7 +207,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={Supabase}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Supabase</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            Supabase
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -201,7 +219,9 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={Git}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">Git</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            Git
+          </h2>
         </SwiperSlide>
         <SwiperSlide className="min-h-20">
           <Image
@@ -211,15 +231,13 @@ export default function Techs() {
             className="w-16 max-[500px]:w-14"
             src={Github}
           />
-          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">GitHub</h2>
+          <h2 className="text-3xl text-tertiary ml-2 max-[500px]:text-xl">
+            GitHub
+          </h2>
         </SwiperSlide>
       </Swiper>
-      <div 
-        className="w-full gap-x-5 gap-y-5 grid min-[500px]:grid-cols-2 min-[980px]:grid-cols-4 mt-5 min-[650px]:mt-9 min-[1000px]:mt-12"
-        data-aos={"flip-up"}
-        data-aos-delay={"300"}
-      >
-        <div>
+      <div className="w-full gap-x-5 gap-y-5 grid min-[500px]:grid-cols-2 min-[980px]:grid-cols-4 mt-5 min-[650px]:mt-9 min-[1000px]:mt-12">
+        <div data-aos={"flip-up"} data-aos-delay={"300"}>
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -227,7 +245,7 @@ export default function Techs() {
           >
             Linguagens
           </h1>
-          <div className="w-8/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
+          <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
             <Image
               alt="JavaScript Icon"
               width={50}
@@ -265,7 +283,7 @@ export default function Techs() {
             />
           </div>
         </div>
-        <div>
+        <div data-aos={"flip-up"} data-aos-delay={"300"}>
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -273,7 +291,7 @@ export default function Techs() {
           >
             Estilização
           </h1>
-          <div className="w-8/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
+          <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
             <Image
               alt="Styled-Components Icon"
               width={50}
@@ -290,7 +308,7 @@ export default function Techs() {
             />
           </div>
         </div>
-        <div>
+        <div data-aos={"flip-up"} data-aos-delay={"300"}>
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -298,7 +316,7 @@ export default function Techs() {
           >
             ORMs e BDs
           </h1>
-          <div className="w-8/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
+          <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
             <Image
               alt="PostgreSQL Icon"
               width={50}
@@ -336,7 +354,7 @@ export default function Techs() {
             />
           </div>
         </div>
-        <div>
+        <div data-aos={"flip-up"} data-aos-delay={"300"}>
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -344,7 +362,7 @@ export default function Techs() {
           >
             Versionamento
           </h1>
-          <div className="w-8/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
+          <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
             <Image
               alt="Git Icon"
               width={50}
