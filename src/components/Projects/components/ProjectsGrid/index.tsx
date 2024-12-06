@@ -13,6 +13,10 @@ import InOrbit from "@/assets/Projects/inorbit.svg";
 import HomeAutomate from "@/assets/Projects/HomeAutomate.png";
 import LocalUser from "@/assets/Projects/LocalUser.png";
 import ResistorCalculator from "@/assets/Projects/Resistor Calculator.png";
+import ClimateControl from "@/assets/Projects/ClimateControl.png";
+import StudyPlus from "@/assets/Projects/StudyPlus.png";
+import AdressSignUp from "@/assets/Projects/Adress SignUp.ico";
+import DevVictorLinks from "@/assets/Projects/DevVictorLinks.png";
 
 export default function ProjectsGrid({ year }: { year: number }) {
   if (year === 2024) {
@@ -70,6 +74,26 @@ export default function ProjectsGrid({ year }: { year: number }) {
           href="https://github.com/Victor-Lis/Resistor-Calculator/"
           alt="Resistor Calculador"
           image={ResistorCalculator}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Climate-Control/"
+          alt="Climate Control"
+          image={ClimateControl}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/StudyPlus-with-NextJS/"
+          alt="Study Plus"
+          image={StudyPlus}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Adress-SignUp/"
+          alt="Adress SignUp"
+          image={AdressSignUp}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Linktree-with-ThreeJS/"
+          alt="Linktree with ThreeJS"
+          image={DevVictorLinks}
         />
       </div>
     );

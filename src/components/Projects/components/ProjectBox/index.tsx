@@ -21,11 +21,11 @@ export default function ProjectBox({image, alt, href}:ProjectBoxProps) {
     target="_blank"
     rel="noreferrer"
     href={href}
-    className="w-32 h-32 p-2 hover:bg-primary/40 bg-primary/80 border-2 border-primary/80 hover:border-primary/40 hover:duration-150 duration-300 cursor-pointer bounce flex flex-col justify-center items-center"
+    className="w-32 h-32 max-[800px]:w-16 max-[800px]:h-16 p-2 hover:bg-primary/40 bg-primary/80 border-2 border-primary/80 hover:border-primary/40 hover:duration-150 duration-300 cursor-pointer bounce flex flex-col justify-center items-center"
     onMouseEnter={toggleShow}
     onMouseLeave={toggleShow}
    >
-    {show && <h2 className="w-full text-left text-xs text-tertiary uppercase font-bold">{alt}</h2>}
+    {show && <h2 className="max-[800px]:hidden w-full text-left text-xs text-tertiary uppercase font-bold">{alt}</h2>}
     <Image
       className={show ? "w-9/12" : "w-full"}
       src={image}
