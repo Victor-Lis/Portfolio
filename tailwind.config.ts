@@ -23,6 +23,15 @@ export default {
       },
       clip: {
         "profile-photo": "polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);"
+      },
+      animation: {
+        'bounce-one': 'bounce-one .5s linear',
+      },
+      keyframes: {
+        bounceOne: {
+          '0%' : { 'transform': 'translateY(10%)' },
+          '100%': { 'transform': 'translateY(0%)' },
+        }
       }
     },
   },
