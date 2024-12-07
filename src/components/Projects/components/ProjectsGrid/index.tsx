@@ -3,20 +3,35 @@ import ProjectBox from "../ProjectBox";
 import JS from "@/assets/Icons/javascript.svg";
 
 // 2024
-import EtecChamados from "@/assets/Projects/Etec Chamados.png";
-import EcoPlay from "@/assets/Projects/Eco Play.png";
-import CasaDaMae from "@/assets/Projects/Casa Da Mae.png";
-import TodoListBetahub from "@/assets/Projects/Todo-List Betahub.png";
-import CashConvert from "@/assets/Projects/CashConvert.png";
-import UniaoEtequianos from "@/assets/Projects/Uniao Etequianos.png";
-import InOrbit from "@/assets/Projects/inorbit.svg";
-import HomeAutomate from "@/assets/Projects/HomeAutomate.png";
-import LocalUser from "@/assets/Projects/LocalUser.png";
-import ResistorCalculator from "@/assets/Projects/Resistor Calculator.png";
-import ClimateControl from "@/assets/Projects/ClimateControl.png";
-import StudyPlus from "@/assets/Projects/StudyPlus.png";
-import AdressSignUp from "@/assets/Projects/Adress SignUp.ico";
-import DevVictorLinks from "@/assets/Projects/DevVictorLinks.png";
+import EtecChamados from "@/assets/Projects/2024/Etec Chamados.png";
+import EcoPlay from "@/assets/Projects/2024/Eco Play.png";
+import CasaDaMae from "@/assets/Projects/2024/Casa Da Mae.png";
+import TodoListBetahub from "@/assets/Projects/2024/Todo-List Betahub.png";
+import CashConvert from "@/assets/Projects/2024/CashConvert.png";
+import UniaoEtequianos from "@/assets/Projects/2024/Uniao Etequianos.png";
+import InOrbit from "@/assets/Projects/2024/inorbit.svg";
+import HomeAutomate from "@/assets/Projects/2024/HomeAutomate.png";
+import LocalUser from "@/assets/Projects/2024/LocalUser.png";
+import ResistorCalculator from "@/assets/Projects/2024/Resistor Calculator.png";
+import ClimateControl from "@/assets/Projects/2024/ClimateControl.png";
+import StudyPlus from "@/assets/Projects/2024/StudyPlus.png";
+import AdressSignUp from "@/assets/Projects/2024/Adress SignUp.ico";
+import DevVictorLinks from "@/assets/Projects/2024/DevVictorLinks.png";
+
+// 2023
+import MathQuiz from "@/assets/Projects/2023/MathIcon.png";
+import DalyGames from "@/assets/Projects/2023/DalyGames.svg";
+import SolarSystem from "@/assets/Projects/2023/SolarSystem.png";
+import GoodDay from "@/assets/Projects/2023/GoodDay.png";
+import VestibulinhoWeb from "@/assets/Projects/2023/VestibulinhoWeb.png";
+import WhoIsThatPokemon from "@/assets/Projects/2023/WhoIsThatPokemon.png";
+import RepositoriesSearch from "@/assets/Projects/2023/RepositoriesSearch.png";
+import TemperatureCalculator from "@/assets/Projects/2023/TemperatureCalculator.png";
+import TrianglesApp from "@/assets/Projects/2023/Triangle App.png"
+
+// 2022 
+import AlienGame from "@/assets/Projects/2022/AlienGame.svg"
+import SvgCreator from "@/assets/Projects/2022/SvgCreate.png"
 
 export default function ProjectsGrid({ year }: { year: number }) {
   if (year === 2024) {
@@ -26,14 +41,14 @@ export default function ProjectsGrid({ year }: { year: number }) {
         data-aos="fade-left"
       >
         <ProjectBox
-          href="https://github.com/Victor-Lis/Etec-Chamados"
-          alt="Etec Chamados"
-          image={EtecChamados}
-        />
-        <ProjectBox
           href="https://github.com/Victor-Lis/EcoPlay-Web/"
           alt="Eco Play"
           image={EcoPlay}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Etec-Chamados"
+          alt="Etec Chamados"
+          image={EtecChamados}
         />
         <ProjectBox
           href="https://github.com/Victor-Lis/Casa-da-Mae/"
@@ -106,19 +121,49 @@ export default function ProjectsGrid({ year }: { year: number }) {
         data-aos="fade-left"
       >
         <ProjectBox
-          href="https://github.com/Victor-Lis/Etec-Chamados"
-          alt="Etec Chamados"
-          image={EtecChamados}
+          href="https://github.com/Victor-Lis/MathQuiz"
+          alt="Math Quiz"
+          image={MathQuiz}
         />
         <ProjectBox
-          href="https://github.com/Victor-Lis/Etec-Chamados"
-          alt="Etec Chamados"
-          image={EtecChamados}
+          href="https://github.com/Victor-Lis/Daly-Games/"
+          alt="Daly Games"
+          image={DalyGames}
         />
         <ProjectBox
-          href="https://github.com/Victor-Lis/Etec-Chamados"
-          alt="Etec Chamados"
-          image={EtecChamados}
+          href="https://github.com/Victor-Lis/Solar-System-in-ThreeJS"
+          alt="Solar System with ThreeJS"
+          image={SolarSystem}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Good-Day-App"
+          alt="Good Day App"
+          image={GoodDay}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Etec-Vestibulinho"
+          alt="Vestibulinho Etec"
+          image={VestibulinhoWeb}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Who-is-that-pokemon-app/"
+          alt="Who is that pokemon?"
+          image={WhoIsThatPokemon}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Repositories-Search"
+          alt="Repositories Search"
+          image={RepositoriesSearch}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Temperature-App"
+          alt="Temperature App"
+          image={TemperatureCalculator}
+        />
+        <ProjectBox
+          href="https://github.com/Victor-Lis/Triangles-App"
+          alt="Triangles App"
+          image={TrianglesApp}
         />
       </div>
     );
@@ -130,14 +175,14 @@ export default function ProjectsGrid({ year }: { year: number }) {
       data-aos="fade-left"
     >
       <ProjectBox
-        href="https://github.com/Victor-Lis/Etec-Chamados"
-        alt="Etec Chamados"
-        image={EtecChamados}
+        href="https://github.com/Victor-Lis/ET-Game/"
+        alt="Alien Game"
+        image={AlienGame}
       />
       <ProjectBox
-        href="https://github.com/Victor-Lis/Etec-Chamados"
-        alt="Etec Chamados"
-        image={EtecChamados}
+        href="https://github.com/Victor-Lis/Svg-Creator"
+        alt="SVG Creator"
+        image={SvgCreator}
       />
     </div>
   );

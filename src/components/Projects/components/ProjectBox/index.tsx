@@ -27,7 +27,7 @@ export default function ProjectBox({image, alt, href}:ProjectBoxProps) {
    >
     {show && <h2 className="max-[800px]:hidden w-full text-left text-xs text-tertiary uppercase font-bold">{alt}</h2>}
     <Image
-      className={show ? "w-9/12" : "w-full"}
+      className={show ? "w-9/12 rounded-sm" : "w-10/12 rounded-sm"}
       src={image}
       alt={alt}
     />
