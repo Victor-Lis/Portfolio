@@ -20,8 +20,8 @@ export default function Hero() {
     AOS.init();
   }, []);
 
-  const getMyAge =
-    new Date().getFullYear() - new Date("2007-02-16T23:50:00").getFullYear();
+  const getAge = `${(new Date().getTime() - new Date("2007-02-16T23:50:00").getTime()) / (1000 * 60 * 60 * 24 * 365.25)}`.slice(0, 2)
+    // * 1000 => Segundos | * 60 => Minutos | *24 => horas | *365.25 => dias                                                           
 
   return (
     <div className="w-full min-h-section-common bg-primary px-14 pb-7 pt-3 max-[850px]:px-4 max-[850px]:py-4 border-secondary border-l-8 selection:bg-secondary/5">
@@ -78,7 +78,7 @@ export default function Hero() {
               Dev Web <strong className="text-secondary">/</strong> Front-End
             </h2>
             <h2 className="text-tertiary text-4xl exo-2-regular max-[700px]:text-2xl">
-              {getMyAge} anos.
+              {getAge} anos.
             </h2>
           </div>
           <h2 className="text-tertiary text-5xl exo-2 max-[700px]:w-full max-[700px]:text-left max-[700px]:text-4xl max-[400px]:text-3xl">
