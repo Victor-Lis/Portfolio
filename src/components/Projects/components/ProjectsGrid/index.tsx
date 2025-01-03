@@ -5,7 +5,7 @@ import JS from "@/assets/Icons/javascript.svg";
 // 2024
 import EtecChamados from "@/assets/Projects/2024/Etec Chamados.png";
 import EcoPlay from "@/assets/Projects/2024/Eco Play.png";
-import CasaDaMae from "@/assets/Projects/2024/Casa Da Mae.png";
+import CasaDaMae from "@/assets/Projects/2024/CasaDaMae.png";
 import TodoListBetahub from "@/assets/Projects/2024/Todo-List Betahub.png";
 import CashConvert from "@/assets/Projects/2024/CashConvert.png";
 import UniaoEtequianos from "@/assets/Projects/2024/Uniao Etequianos.png";
