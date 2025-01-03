@@ -20,6 +20,7 @@ import Image from "next/image";
 import JS from "@/assets/Icons/javascript.svg";
 import TS from "@/assets/Icons/typescript.svg";
 import ReactIcon from "@/assets/Icons/react.svg";
+import ReactNativeIcon from "@/assets/Icons/react-native.svg";
 import Tailwind from "@/assets/Icons/tailwind.svg";
 import StyledComponents from "@/assets/Icons/styled-components.svg";
 
@@ -85,6 +86,13 @@ export default function Techs() {
               height={50}
               className="h-10 w-10"
               src={ReactIcon}
+            />
+            <Image
+              alt="React Native Icon"
+              width={50}
+              height={50}
+              className="h-10 w-10"
+              src={ReactNativeIcon}
             />
             <Image
               alt="NextJS Icon"
