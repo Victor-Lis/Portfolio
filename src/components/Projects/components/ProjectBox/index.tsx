@@ -5,10 +5,13 @@ import type { StaticImageData } from "next/image";
 
 import { useState } from "react";
 
+type Techs = "JavaScript" | "TypeScript" | ""
+
 type ProjectBoxProps = {
   image: StaticImageData
   alt: string
   href: string
+  name: string,
 }
 
 export default function ProjectBox({image, alt, href}:ProjectBoxProps) {

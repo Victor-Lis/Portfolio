@@ -1,22 +1,13 @@
-"use client";
-
 import "./fonts.css";
 import "./profile.css";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-import localFont from "next/font/local";
 import Image from "next/image";
-import { useEffect } from "react";
 
 import Linkedin from "@/assets/Profile/linkedin-personalized-2.svg";
 import Github from "@/assets/Profile/github-personalized-2.svg";
+import { agesManager } from "@/data/getDates";
 
 export default function Footer() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <footer className="w-full bg-primary px-14 max-[850px]:px-4 pb-3 pt-7 max-[850px]:py-4 border-secondary border-l-8 selection:bg-secondary/5 flex flex-wrap gap-x-5 gap-y-2">
@@ -42,7 +33,7 @@ export default function Footer() {
           Victor-Lis
         </h2>
       </a>
-      <h2 className="text-tertiary exo-2-regular text-2xl ml-auto">&copy; {new Date().getFullYear()} Victor Lis Bronzo</h2>
+      <h2 className="text-tertiary exo-2-regular text-2xl ml-auto mt-auto">&copy; {agesManager.getThisYear()} Victor Lis Bronzo</h2>
     </footer>
   );
 }
