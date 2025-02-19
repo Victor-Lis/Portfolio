@@ -23,7 +23,7 @@ export default function ProjectSlide({ project }: { project: ProjectType }) {
           })}
         </div>
       </div>
-      <p className="w-full text-tertiary line-clamp-4">{project.description}</p>
+      <p className="w-full text-tertiary line-clamp-3">{project.description}</p>
       <div className="w-full flex flex-col justify-between items-start gap-y-2 text-tertiary text-sm">
         {project.links.github && (
           <a
