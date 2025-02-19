@@ -1,19 +1,10 @@
-"use client";
-
 import "./fonts.css";
 import "./profile.css";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import { useEffect } from "react";
 import Section from "./components/Section";
 
 export default function AboutMe() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-secondary/5">
       <Section aosData="fade-left">
