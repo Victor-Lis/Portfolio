@@ -1,4 +1,4 @@
-import type { Types } from "@/app/@types/type";
+import type { Types } from "@/@types/type";
 import { useProjectStore } from "@/data/projectManager";
 
 type TopicProps = {

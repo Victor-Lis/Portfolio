@@ -1,5 +1,5 @@
 "use client";
-import type { ProjectType } from "@/app/@types/project";
+import type { ProjectType } from "@/@types/project";
 import { Github, Linkedin, Chrome } from "lucide-react";
 import Image from "next/image";
 

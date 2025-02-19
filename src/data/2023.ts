@@ -1,4 +1,4 @@
-import type { ProjectType } from "@/app/@types/project";
+import type { ProjectType } from "@/@types/project";
 
 import Firebase from "@/assets/Icons/firebase.svg";
 import NextJS from "@/assets/Icons/nextjs.svg";

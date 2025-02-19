@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import type { ProjectType } from "@/app/@types/project";
+import type { ProjectType } from "@/@types/project";
 import { useProjectStore } from "@/data/projectManager";
 import ProjectSlide from "../ProjectSlide";
 

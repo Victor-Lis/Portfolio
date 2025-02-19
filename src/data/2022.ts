@@ -1,4 +1,4 @@
-import type { ProjectType } from "@/app/@types/project";
+import type { ProjectType } from "@/@types/project";
 
 import JavaScript from "@/assets/Icons/javascript.svg";
 

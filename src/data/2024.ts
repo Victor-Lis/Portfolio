@@ -1,4 +1,4 @@
-import type { ProjectType } from "@/app/@types/project";
+import type { ProjectType } from "@/@types/project";
 
 import Arduino from "@/assets/Icons/arduino.svg";
 import Drizzle from "@/assets/Icons/drizzle.svg";

@@ -1,6 +1,6 @@
-import type { Types } from "@/app/@types/type";
-import type { ProjectsType } from '@/app/@types/projects';
-import type { ProjectType } from "@/app/@types/project";
+import type { Types } from "@/@types/type";
+import type { ProjectsType } from '@/@types/projects';
+import type { ProjectType } from "@/@types/project";
 
 import { create } from 'zustand';
 
