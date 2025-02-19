@@ -31,6 +31,10 @@ export const twoThousandTwentyThree: ProjectType[] = [
       "Um jogo educacional desafiador de matemática que torna o aprendizado divertido! Desenvolvido com tecnologias modernas como React Native e Expo, inspirado no clássico jogo 'Stop'",
     links: {
       github: "https://github.com/Victor-Lis/MathQuiz",
+      linkedin: {
+        name: "Stop Matemático",
+        path: "https://www.linkedin.com/in/victor-lis-bronzo/details/projects/",
+      },
     },
     techs: [
       { name: "React Native", image: ReactNative },
@@ -77,6 +81,10 @@ export const twoThousandTwentyThree: ProjectType[] = [
       "Sistema web desenvolvido para apresentar informações e divulgar os cursos técnicos da ETEC Professor Carmine Biagio Tundisi.",
     links: {
       github: "https://github.com/Victor-Lis/Etec-Vestibulinho",
+      linkedin: {
+        name: "Projeto Vestibulinho (Web e Mobile)",
+        path: "https://www.linkedin.com/in/victor-lis-bronzo/details/projects/",
+      },
     },
     techs: [
       { name: "React", image: React },
@@ -91,6 +99,10 @@ export const twoThousandTwentyThree: ProjectType[] = [
       "Aplicativo desenvolvido para auxiliar na divulgação da ETEC, permitindo o gerenciamento e compartilhamento de conteúdos relacionados aos cursos técnicos.",
     links: {
       github: "https://github.com/Victor-Lis/Etec-Vestibulinho",
+      linkedin: {
+        name: "Projeto Vestibulinho (Web e Mobile)",
+        path: "https://www.linkedin.com/in/victor-lis-bronzo/details/projects/",
+      },
     },
     techs: [
       { name: "React Native", image: ReactNative },

@@ -1,5 +1,8 @@
 export type LinkType = {
-  linkedin?: string;
+  linkedin?: {
+    name: string
+    path: string
+  };
   github: string;
   deploy?: string;
 }
