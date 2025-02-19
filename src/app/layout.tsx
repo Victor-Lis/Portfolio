@@ -18,11 +18,12 @@ export const metadata: Metadata = {
   description: "Portfólio com informações do Dev. Victor Lis Bronzo",
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface LayoutProps {
   children: React.ReactNode;
-}) {
+  // Se houver outras props, adicione aqui
+}
+
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="pt-BR">
       <body
