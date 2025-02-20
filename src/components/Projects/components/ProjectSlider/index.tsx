@@ -16,7 +16,7 @@ export default function ProjectSlider() {
   }
 
   return (
-    <div className="triple-slider w-full min-[1000px]:w-8/12 min-[1100px]:w-9/12 mx-auto mt-12">
+    <div className="triple-slider w-full mx-auto mt-12">
       <Swiper
         modules={[EffectCoverflow, Pagination]}
         effect={"coverflow"}
