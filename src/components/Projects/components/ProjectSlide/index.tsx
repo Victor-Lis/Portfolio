@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ProjectSlide({ project }: { project: ProjectType }) {
   return (
-    <div className="bg-primary bg-image min-w-full h-80 px-6 py-6 flex flex-col justify-between">
+    <div className="bg-primary bg-image h-80 px-6 py-6 flex flex-col justify-between min-[850px]:w-9/12 min-[1280px]:w-full">
       <div className="w-full flex justify-between items-baseline">
         <h2 className="text-blue-500 text-4xl font-bold flex-[2] text-start">
           {project.name}
