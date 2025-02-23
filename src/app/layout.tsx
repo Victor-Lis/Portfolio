@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Dev Victor Lis",
-  description: "Portfólio com informações do Dev. Victor Lis Bronzo",
+  title: "Dev - Victor Lis Bronzo",
+  description: "Portfólio com informações de Victor Lis Bronzo",
 };
 
 export default function RootLayout({
