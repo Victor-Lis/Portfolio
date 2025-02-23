@@ -1,13 +1,21 @@
-"use client"
+"use client";
 
 import "./fonts.css";
 import "./profile.css";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Section from "./components/Section";
 
 export default function AboutMe() {
-  const getFade = () => window.innerWidth < 410 ? "fade-left" : "fade-right"
+  const [fade, setFade] = useState<"fade-right" | "fade-left">("fade-left")
+
+  const getFade = () => {
+    return (window.innerWidth < 410) ? "fade-right" : "fade-left"
+  }
+
+  useEffect(() => {
+    setFade(getFade())
+  }, [])
 
   return (
     <div className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-secondary/5">
@@ -101,7 +109,7 @@ export default function AboutMe() {
           (até fora da programação).
         </p>
       </Section>
-      <Section aosData={getFade()}>
+      <Section aosData={fade}>
         <h1
           className={
             "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
@@ -182,7 +190,7 @@ export default function AboutMe() {
           (produzido ao longo de 2024).
         </p>
       </Section>
-      <Section aosData={getFade()}>
+      <Section aosData={fade}>
         <h1
           className={
             "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
