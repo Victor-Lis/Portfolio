@@ -1,3 +1,5 @@
+"use client"
+
 import "./fonts.css";
 import "./profile.css";
 
@@ -5,6 +7,8 @@ import { useEffect } from "react";
 import Section from "./components/Section";
 
 export default function AboutMe() {
+  const getFade = () => window.innerWidth < 410 ? "fade-left" : "fade-right"
+
   return (
     <div className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-secondary/5">
       <Section aosData="fade-left">
@@ -97,15 +101,15 @@ export default function AboutMe() {
           (até fora da programação).
         </p>
       </Section>
-      <Section aosData="fade-right">
+      <Section aosData={getFade()}>
         <h1
           className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48"
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
           }
         >
           TCC
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
           O{" "}
           <a
             target="_blank"
@@ -178,15 +182,15 @@ export default function AboutMe() {
           (produzido ao longo de 2024).
         </p>
       </Section>
-      <Section aosData="fade-right">
+      <Section aosData={getFade()}>
         <h1
           className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48"
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
           }
         >
           Objetivos
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
           {/* Tenho como meus objetivos para essa nova etapa: */}
           Tenho como meu objetivo para essa nova etapa:
         </p>
