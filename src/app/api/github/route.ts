@@ -2,7 +2,9 @@
 // import playwright from "playwright-aws-lambda";
 // import chromium from "chrome-aws-lambda";
 
-// export async function GET(req: Request) {
+import { NextResponse } from "next/server";
+
+export async function GET(req: Request) {
 //   const { searchParams } = new URL(req.url);
 
 //   // Parâmetros da URL (ex.: ?name1=Ronaldo&pos1=Attack&name2=Messi&pos2=Midfield)
@@ -96,4 +98,5 @@
 //       "Cache-Control": "public, max-age=3600", // Cache por 1 hora
 //     },
 //   });
-// }
+  return NextResponse.json({message: "Ainda não mexemos por aqui"}, { status: 200 })
+}
