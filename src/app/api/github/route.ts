@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { chromium } from "@playwright/test";
+import playwright from "playwright-aws-lambda";
+import chromium from "chrome-aws-lambda";
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
@@ -69,8 +70,11 @@ export async function GET(req: Request) {
     </html>
   `;
 
-  // Inicializa o Playwright
-  const browser = await chromium.launch({ headless: true });
+  const browser = await playwright.launchChromium({
+    headless: true,
+    args: chromium.args, // Pegando argumentos corretos
+    executablePath: await chromium.executablePath || "", // Caminho correto para execução
+  });
   const page = await browser.newPage();
 
   // Renderiza o HTML

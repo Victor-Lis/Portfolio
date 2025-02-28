@@ -10,11 +10,12 @@ export default function AboutMe() {
   const [fade, setFade] = useState<"fade-right" | "fade-left">("fade-left")
 
   const getFade = () => {
-    return (window.innerWidth < 410) ? "fade-right" : "fade-left"
+    const fadeDirection = (window.innerWidth < 410) ? "fade-left" : "fade-right"
+    setFade(fadeDirection)
   }
 
   useEffect(() => {
-    setFade(getFade())
+    getFade()
   }, [])
 
   return (
