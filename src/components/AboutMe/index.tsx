@@ -191,7 +191,7 @@ export default function AboutMe() {
           (produzido ao longo de 2024).
         </p>
       </Section>
-      <Section aosData={fade}>
+      {/* <Section aosData={fade}>
         <h1
           className={
             "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
@@ -200,20 +200,19 @@ export default function AboutMe() {
           Objetivos
         </h1>
         <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
-          {/* Tenho como meus objetivos para essa nova etapa: */}
           Tenho como meu objetivo para essa nova etapa:
         </p>
         <ul className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 list-disc marker:text-secondary">
-          {/* <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
+          <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
             Ingressar em um curso tecnólogo no próximo ano, já que ainda sou muito novo e até
             aqui o tempo sempre jogou a meu favor
-          </li> */}
+          </li>
           <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
             Buscar experiência e consolidação dos meus aprendizados, portanto, pretendo o quanto antes ingressar no
             meio profissional.
           </li>
         </ul>
-      </Section>
+      </Section> */}
     </div>
   );
 }

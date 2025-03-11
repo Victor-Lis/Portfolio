@@ -66,7 +66,12 @@ export default function Hero() {
               Victor Lis Bronzo
             </h1>
             <h2 className="text-tertiary text-4xl exo-2-regular max-[700px]:text-2xl">
-              Dev Web <strong className="text-secondary">/</strong> Front-End<span className="text-tertiary text-lg"> - Há {agesManager.getDevAge()} anos.</span> <br/>
+              Dev Web <strong className="text-secondary">/</strong> Front-End
+              <span className="text-tertiary text-lg">
+                {" "}
+                - Há {agesManager.getDevAge()} anos.
+              </span>{" "}
+              <br />
               <span className="text-tertiary text-4xl exo-2-regular max-[700px]:text-2xl">
                 {agesManager.getAge()} anos de idade.
               </span>
@@ -74,11 +79,19 @@ export default function Hero() {
           </div>
           <div className="max-[700px]:w-full max-[700px]:text-left">
             <h2 className="text-tertiary text-5xl exo-2 max-[700px]:text-4xl max-[400px]:text-3xl">
-             🎓 Técnico em <br />
+              🎓 Técnico em <br />
               Desenvolvimento de Sistemas
+              <span className="text-tertiary text-2xl font-normal whitespace-nowrap">
+                {" "}
+                - <a href="https://etecatibaia.cps.sp.gov.br/" target="_blank" className="underline cursor-pointer" rel="noreferrer">Etec</a>
+              </span>{" "}
             </h2>
-            <h4 className="text-tertiary text-xl">
-             📚✍️ Tecnólogo Desenvolvimento de Software Multiplataforma
+            <h4 className="text-tertiary text-2xl mt-2">
+              📚✍️ Tecnólogo em Análise e Desenvolvimento de Sistemas
+              <span className="text-tertiary text-sm font-normal whitespace-nowrap">
+                {" "}
+                - <a href="https://bra.ifsp.edu.br/" target="_blank" className="underline cursor-pointer" rel="noreferrer">IFSP</a>
+              </span>{" "}
             </h4>
           </div>
         </div>
