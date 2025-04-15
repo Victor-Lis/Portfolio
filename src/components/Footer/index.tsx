@@ -10,7 +10,7 @@ import { agesManager } from "@/data/getDates";
 export default function Footer() {
 
   return (
-    <footer className="w-full bg-primary px-14 max-[850px]:px-4 pb-3 pt-7 max-[850px]:py-4 border-secondary border-l-8 selection:bg-secondary/5 flex flex-wrap gap-x-5 gap-y-2">
+    <footer id="footer" className="w-full bg-primary px-14 max-[850px]:px-4 pb-3 pt-7 max-[850px]:py-4 border-secondary border-l-8 selection:bg-secondary/5 flex flex-wrap gap-x-5 gap-y-2">
       <a
         className="flex items-center justify-center gap-x-1 hover:opacity-80 duration-150 cursor-pointer"
         target="_blank"

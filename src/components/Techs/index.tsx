@@ -14,11 +14,13 @@ import JS from "../../../public/Icons/javascript.svg";
 import TS from "../../../public/Icons/typescript.svg";
 import ReactIcon from "../../../public/Icons/react.svg";
 import ReactNativeIcon from "../../../public/Icons/react-native.svg";
+
 import Tailwind from "../../../public/Icons/tailwind.svg";
+import ShadcnUI from "../../../public/Icons/shadcn.svg";
 import StyledComponents from "../../../public/Icons/styled-components.svg";
 
 import NextJS from "../../../public/Icons/nextjs.svg";
-import NextAuth from "../../../public/Icons/next-auth.png"
+import NextAuth from "../../../public/Icons/next-auth.png";
 
 import Prisma from "../../../public/Icons/prisma.svg";
 import Drizzle from "../../../public/Icons/drizzle.svg";
@@ -34,30 +36,34 @@ import Git from "../../../public/Icons/git.svg";
 import Github from "../../../public/Icons/github.svg";
 
 export default function Techs() {
-  const [windowWidth, setWindowWidth] = useState<number>(0)
+  const [windowWidth, setWindowWidth] = useState<number>(0);
 
   useEffect(() => {
-    const getWindowWidth = () => setWindowWidth(window.innerWidth)
+    const getWindowWidth = () => setWindowWidth(window.innerWidth);
 
-    getWindowWidth()
+    getWindowWidth();
   }, []);
 
-  const isInterval = () => (windowWidth < 980 && windowWidth > 410)
+  const isInterval = () => windowWidth < 980 && windowWidth > 410;
 
-  const intervals = ["300", "500", "700", "900", "1100"]
+  const intervals = ["300", "500", "700", "900", "1100"];
 
-  function getInterval (): string{
-    if(isInterval()){
-      return intervals[2]
+  function getInterval(): string {
+    if (isInterval()) {
+      return intervals[2];
     }
 
-    return intervals[4]
+    return intervals[4];
   }
 
   return (
-    <div className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,50%_0%,90%_50%,0%_50%) max-[850px]:px-4 max-[850px]:py-4 selection:bg-primary/10">
+    <div id="techs" className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,50%_0%,90%_50%,0%_50%) max-[850px]:px-4 max-[850px]:py-4 selection:bg-primary/10">
       <div className="w-full gap-x-5 gap-y-10 grid min-[410px]:grid-cols-2 min-[980px]:grid-cols-5">
-        <div data-aos={"flip-left"} data-aos-delay={intervals[0]} className="order-1">
+        <div
+          data-aos={"flip-left"}
+          data-aos-delay={intervals[0]}
+          className="order-1"
+        >
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -110,7 +116,11 @@ export default function Techs() {
             />
           </div>
         </div>
-        <div data-aos={"flip-left"} data-aos-delay={intervals[1]} className="order-2 max-[980px]:order-3 max-[410px]:order-3">
+        <div
+          data-aos={"flip-left"}
+          data-aos-delay={intervals[1]}
+          className="order-2 max-[980px]:order-3 max-[410px]:order-3"
+        >
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -133,9 +143,20 @@ export default function Techs() {
               className="h-10 w-10"
               src={Tailwind}
             />
+            <Image
+              alt="ShadcnUI Icon"
+              width={50}
+              height={50}
+              className="h-10 w-10 p-0.5 rounded-full"
+              src={ShadcnUI}
+            />
           </div>
         </div>
-        <div data-aos={"flip-left"} data-aos-delay={intervals[2]} className="order-3 max-[980px]:order-2 max-[410px]:order-2">
+        <div
+          data-aos={"flip-left"}
+          data-aos-delay={intervals[2]}
+          className="order-3 max-[980px]:order-2 max-[410px]:order-2"
+        >
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -174,7 +195,11 @@ export default function Techs() {
             />
           </div>
         </div>
-        <div data-aos={"flip-left"} data-aos-delay={intervals[3]} className="order-4">
+        <div
+          data-aos={"flip-left"}
+          data-aos-delay={intervals[3]}
+          className="order-4"
+        >
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"
@@ -206,7 +231,11 @@ export default function Techs() {
             />
           </div>
         </div>
-        <div data-aos={"flip-left"} data-aos-delay={getInterval()} className="order-5">
+        <div
+          data-aos={"flip-left"}
+          data-aos-delay={getInterval()}
+          className="order-5"
+        >
           <h1
             className={
               "uppercase text-primary text-5xl bebas-neue max-[700px]:text-3xl"

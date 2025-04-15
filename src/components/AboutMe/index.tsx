@@ -19,7 +19,7 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <div className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-secondary/5">
+    <div id="aboutme" className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-secondary/5">
       <Section aosData="fade-left">
         <h1
           className={

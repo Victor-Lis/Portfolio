@@ -3,6 +3,7 @@ import AboutMe from "@/components/AboutMe";
 import Techs from "@/components/Techs";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutMe/>
       <Projects/>
       <Footer/>
+      <Navigation/>
     </div>
   );
 }
