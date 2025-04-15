@@ -1,6 +1,6 @@
 import type { ProjectType } from "@/@types/project";
 
-import JavaScript from "@/assets/Icons/javascript.svg";
+import JavaScript from "../../public/Icons/javascript.svg";
 
 export const twoThousandTwentyTwo: ProjectType[] = [
   {

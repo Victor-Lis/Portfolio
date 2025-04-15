@@ -1,20 +1,20 @@
 import type { ProjectType } from "@/@types/project";
 
-import Arduino from "@/assets/Icons/arduino.svg";
-import Drizzle from "@/assets/Icons/drizzle.svg";
-import Firebase from "@/assets/Icons/firebase.svg";
-import JavaScript from "@/assets/Icons/javascript.svg";
-import NextAuth from "@/assets/Icons/next-auth.png";
-import NextJS from "@/assets/Icons/nextjs.svg";
-import PostgreSQL from "@/assets/Icons/postgresql.svg";
-import Prisma from "@/assets/Icons/prisma.svg";
-import ReactNative from "@/assets/Icons/react-native.svg";
-import React from "@/assets/Icons/react.svg";
-import Supabase from "@/assets/Icons/supabase.svg";
-import Tailwind from "@/assets/Icons/tailwind.svg";
-import TypeScript from "@/assets/Icons/typescript.svg";
-import ThreeJS from "@/assets/Icons/threejs.svg";
-import NodeJS from "@/assets/Icons/node.png";
+import Arduino from "../../public/Icons/arduino.svg";
+import Drizzle from "../../public/Icons/drizzle.svg";
+import Firebase from "../../public/Icons/firebase.svg";
+import JavaScript from "../../public/Icons/javascript.svg";
+import NextAuth from "../../public/Icons/next-auth.png";
+import NextJS from "../../public/Icons/nextjs.svg";
+import PostgreSQL from "../../public/Icons/postgresql.svg";
+import Prisma from "../../public/Icons/prisma.svg";
+import ReactNative from "../../public/Icons/react-native.svg";
+import React from "../../public/Icons/react.svg";
+import Supabase from "../../public/Icons/supabase.svg";
+import Tailwind from "../../public/Icons/tailwind.svg";
+import TypeScript from "../../public/Icons/typescript.svg";
+import ThreeJS from "../../public/Icons/threejs.svg";
+import NodeJS from "../../public/Icons/node.png";
 
 export const twoThousandTwentyFour: ProjectType[] = [
   {

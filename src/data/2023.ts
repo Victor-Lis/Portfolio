@@ -1,12 +1,12 @@
 import type { ProjectType } from "@/@types/project";
 
-import Firebase from "@/assets/Icons/firebase.svg";
-import NextJS from "@/assets/Icons/nextjs.svg";
-import ReactNative from "@/assets/Icons/react-native.svg";
-import React from "@/assets/Icons/react.svg";
-import StyledComponents from "@/assets/Icons/styled-components.svg";
-import Tailwind from "@/assets/Icons/tailwind.svg";
-import TypeScript from "@/assets/Icons/typescript.svg";
+import Firebase from "../../public/Icons/firebase.svg";
+import NextJS from "../../public/Icons/nextjs.svg";
+import ReactNative from "../../public/Icons/react-native.svg";
+import React from "../../public/Icons/react.svg";
+import StyledComponents from "../../public/Icons/styled-components.svg";
+import Tailwind from "../../public/Icons/tailwind.svg";
+import TypeScript from "../../public/Icons/typescript.svg";
 
 export const twoThousandTwentyThree: ProjectType[] = [
   {

@@ -7,16 +7,16 @@ import { useEffect, useState } from "react";
 import Section from "./components/Section";
 
 export default function AboutMe() {
-  const [fade, setFade] = useState<"fade-right" | "fade-left">("fade-left")
+  const [fade, setFade] = useState<"fade-right" | "fade-left">("fade-left");
 
   const getFade = () => {
-    const fadeDirection = (window.innerWidth < 410) ? "fade-left" : "fade-right"
-    setFade(fadeDirection)
-  }
+    const fadeDirection = window.innerWidth < 410 ? "fade-left" : "fade-right";
+    setFade(fadeDirection);
+  };
 
   useEffect(() => {
-    getFade()
-  }, [])
+    getFade();
+  }, []);
 
   return (
     <div className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-secondary/5">
@@ -191,28 +191,30 @@ export default function AboutMe() {
           (produzido ao longo de 2024).
         </p>
       </Section>
-      {/* <Section aosData={fade}>
-        <h1
-          className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
-          }
-        >
-          Objetivos
-        </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
-          Tenho como meu objetivo para essa nova etapa:
-        </p>
-        <ul className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 list-disc marker:text-secondary">
-          <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
-            Ingressar em um curso tecnólogo no próximo ano, já que ainda sou muito novo e até
-            aqui o tempo sempre jogou a meu favor
-          </li>
-          <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
-            Buscar experiência e consolidação dos meus aprendizados, portanto, pretendo o quanto antes ingressar no
-            meio profissional.
-          </li>
-        </ul>
-      </Section> */}
+      {/* 
+        <Section aosData={fade}>
+          <h1
+            className={
+              "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
+            }
+          >
+            Objetivos
+          </h1>
+          <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
+            Tenho como meu objetivo para essa nova etapa:
+          </p>
+          <ul className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 list-disc marker:text-secondary">
+            <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
+              Ingressar em um curso tecnólogo no próximo ano, já que ainda sou muito novo e até
+              aqui o tempo sempre jogou a meu favor
+            </li>
+            <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
+              Buscar experiência e consolidação dos meus aprendizados, portanto, pretendo o quanto antes ingressar no
+              meio profissional.
+            </li>
+          </ul>
+        </Section> 
+      */}
     </div>
   );
 }

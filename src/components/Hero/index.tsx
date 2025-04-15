@@ -6,14 +6,8 @@ import "./profile.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import localFont from "next/font/local";
 import Image from "next/image";
 import { useEffect } from "react";
-
-import ProfilePhoto from "@/assets/Profile/Profile.jpg";
-
-import Linkedin from "@/assets/Profile/linkedin-personalized-2.svg";
-import Github from "@/assets/Profile/github-personalized-2.svg";
 
 import { agesManager } from "@/data/getDates";
 
@@ -34,7 +28,7 @@ export default function Hero() {
           rel="noreferrer"
           href="https://www.linkedin.com/in/victor-lis-bronzo"
         >
-          <Image alt="Linkedin" src={Linkedin} height={36.5} width={36.5} />
+          <Image alt="Linkedin" src="/Profile/linkedin-personalized-2.svg" height={36.5} width={36.5} />
           <h2 className="text-tertiary exo-2-regular text-2xl border-b-2 border-secondary">
             Victor Lis Bronzo
           </h2>
@@ -45,7 +39,7 @@ export default function Hero() {
           rel="noreferrer"
           href="https://www.github.com/Victor-Lis"
         >
-          <Image alt="Github" src={Github} height={40} width={40} />
+          <Image alt="Github" src="/Profile/github-personalized-2.svg" height={40} width={40} />
           <h2 className="text-tertiary exo-2-regular text-2xl selection:text-secondary border-b-2 border-secondary">
             Victor-Lis
           </h2>
@@ -102,7 +96,7 @@ export default function Hero() {
         >
           <Image
             alt="My photo"
-            src={ProfilePhoto}
+            src="/Profile/Profile.jpg"
             height={2000}
             width={2000}
             className="min-w-72 w-7/12 max-w-5xl min-[850px]:[clip-path:polygon(10%_0%,100%_0%,90%_100%,0%_100%)]"

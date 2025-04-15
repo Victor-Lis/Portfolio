@@ -10,28 +10,28 @@ import "./styles.css";
 
 import Image from "next/image";
 
-import JS from "@/assets/Icons/javascript.svg";
-import TS from "@/assets/Icons/typescript.svg";
-import ReactIcon from "@/assets/Icons/react.svg";
-import ReactNativeIcon from "@/assets/Icons/react-native.svg";
-import Tailwind from "@/assets/Icons/tailwind.svg";
-import StyledComponents from "@/assets/Icons/styled-components.svg";
+import JS from "../../../public/Icons/javascript.svg";
+import TS from "../../../public/Icons/typescript.svg";
+import ReactIcon from "../../../public/Icons/react.svg";
+import ReactNativeIcon from "../../../public/Icons/react-native.svg";
+import Tailwind from "../../../public/Icons/tailwind.svg";
+import StyledComponents from "../../../public/Icons/styled-components.svg";
 
-import NextJS from "@/assets/Icons/nextjs.svg";
-import NextAuth from "@/assets/Icons/next-auth.png"
+import NextJS from "../../../public/Icons/nextjs.svg";
+import NextAuth from "../../../public/Icons/next-auth.png"
 
-import Prisma from "@/assets/Icons/prisma.svg";
-import Drizzle from "@/assets/Icons/drizzle.svg";
+import Prisma from "../../../public/Icons/prisma.svg";
+import Drizzle from "../../../public/Icons/drizzle.svg";
 
-import PostgreSQL from "@/assets/Icons/postgresql.svg";
-import SQL from "@/assets/Icons/SQL.svg";
+import PostgreSQL from "../../../public/Icons/postgresql.svg";
+import SQL from "../../../public/Icons/SQL.svg";
 
-import Firebase from "@/assets/Icons/firebase.svg";
-import MongoDB from "@/assets/Icons/mongodb.svg";
-import Supabase from "@/assets/Icons/supabase.svg";
+import Firebase from "../../../public/Icons/firebase.svg";
+import MongoDB from "../../../public/Icons/mongodb.svg";
+import Supabase from "../../../public/Icons/supabase.svg";
 
-import Git from "@/assets/Icons/git.svg";
-import Github from "@/assets/Icons/github.svg";
+import Git from "../../../public/Icons/git.svg";
+import Github from "../../../public/Icons/github.svg";
 
 export default function Techs() {
   const [windowWidth, setWindowWidth] = useState<number>(0)

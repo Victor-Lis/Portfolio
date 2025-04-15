@@ -3,8 +3,8 @@ import "./profile.css";
 
 import Image from "next/image";
 
-import Linkedin from "@/assets/Profile/linkedin-personalized-2.svg";
-import Github from "@/assets/Profile/github-personalized-2.svg";
+import Linkedin from "../../../public/Profile/linkedin-personalized-2.svg";
+import Github from "../../../public/Profile/github-personalized-2.svg";
 import { agesManager } from "@/data/getDates";
 
 export default function Footer() {
