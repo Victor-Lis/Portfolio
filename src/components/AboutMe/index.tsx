@@ -1,8 +1,5 @@
 "use client";
 
-import "./fonts.css";
-import "./profile.css";
-
 import { useEffect, useState } from "react";
 import Section from "./components/Section";
 

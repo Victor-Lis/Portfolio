@@ -1,6 +1,3 @@
-import "./fonts.css";
-import "./profile.css";
-
 import Image from "next/image";
 
 import Linkedin from "../../../public/Profile/linkedin-personalized-2.svg";
@@ -8,7 +5,6 @@ import Github from "../../../public/Profile/github-personalized-2.svg";
 import { agesManager } from "@/data/getDates";
 
 export default function Footer() {
-
   return (
     <footer id="footer" className="w-full bg-primary px-14 max-[850px]:px-4 pb-3 pt-7 max-[850px]:py-4 border-secondary border-l-8 selection:bg-secondary/5 flex flex-wrap gap-x-5 gap-y-2">
       <a

@@ -1,21 +1,10 @@
 "use client";
 
-import "./fonts.css";
-import "./profile.css";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 import Image from "next/image";
-import { useEffect } from "react";
 
 import { agesManager } from "@/data/getDates";
 
 export default function Hero() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div id="hero" className="w-full min-h-section-common bg-primary px-14 pb-7 pt-3 max-[850px]:px-4 max-[850px]:py-4 border-secondary border-l-8 selection:bg-secondary/5">
       <div
