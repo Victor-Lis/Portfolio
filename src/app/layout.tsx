@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "./fonts.css";
 
+import manifest from "@/app/manifest";
+
 import AOSProvider from "@/providers/AOS";
 
 const geistSans = localFont({
@@ -28,6 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <meta name="theme-color" content={manifest().theme_color} />
+        <meta name="background-color" content={manifest().background_color} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
