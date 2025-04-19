@@ -1,36 +1,63 @@
-'use client'
-import { useState } from "react";
-import { ArrowUp, ArrowDown } from 'lucide-react'
+"use client";
+import dynamic from "next/dynamic";
+import { Menu, ChevronRight } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { usePathname, useRouter } from "next/navigation";
 
 // const sections = ["#hero", "#techs", "#aboutme", "#projects", "#footer"];
-const sections = ["#hero", "#techs", "#aboutme", "#projects"];
+const sections = [
+  { id: "#hero", name: "Hero", page: "/" },
+  { id: "#techs", name: "Techs", page: "/" },
+  { id: "#aboutme", name: "About Me", page: "/" },
+  { id: "#projects", name: "Projects", page: "/" }
+]
 
-export default function Navigation() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+function Navigation() {
+  const path = usePathname();
+  const router = useRouter();
 
-  const handleNavigation = (direction: "up" | "down") => {
-    if (direction === "up" && currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    } else if (direction === "down" && currentIndex < sections.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+  const handleSectionClick = (section: { id: string; page: string }) => {
+    if (section.page === path) {
+      document
+        .querySelector(section.id)
+        ?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push(`${section.page}${section.id}`);
     }
-    document.querySelector(sections[currentIndex])?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className="fixed right-3 max-sm:right-1 top-1/2 transform -translate-y-1/2 flex flex-col space-y-2 z-50">
-      <button
-      onClick={() => handleNavigation("up")}
-      className="p-2 max-sm:p-1 bg-primary text-white rounded-md shadow hover:bg-primary/85 border-[1px] border-secondary transition cursor-pointer"
-      >
-        <ArrowUp/>
-      </button>
-      <button
-      onClick={() => handleNavigation("down")}
-      className="p-2 max-sm:p-1 bg-primary text-white rounded-md shadow hover:bg-primary/85 border-[0.5px] border-secondary transition cursor-pointer"
-      >
-        <ArrowDown/>
-      </button>
-    </div>
+    <Sheet>
+      <SheetTrigger className="fixed right-3 bottom-3 max-sm:right-1 max-sm:bottom-1 transform flex flex-col space-y-2 z-50 p-2 max-sm:p-1 bg-primary text-white rounded-md shadow hover:bg-primary/85 border-[1px] border-secondary transition cursor-pointer">
+        <Menu />
+      </SheetTrigger>
+      <SheetContent className="w-36">
+        <SheetHeader className="px-4 pt-4 pb-0">
+          <SheetTitle className="uppercase font-bold">Navegar</SheetTitle>
+        </SheetHeader>
+        <div className="flex flex-col gap-0.5 px-4">
+          {sections.map((section, index) => (
+            <a
+              key={index}
+              className={`p-2 rounded-md hover:bg-primary/10 transition cursor-pointer flex items-center justify-left ${
+                `${section.page}${section.id}` === path ? "bg-primary/10" : ""
+              }`}
+              onClick={() => handleSectionClick(section)}
+            >
+              {section.page === path && <ChevronRight />}
+              <span className="mb-1">{section.name}</span>
+            </a>
+          ))}
+        </div>
+      </SheetContent>
+    </Sheet>
   );
 }
+
+export default dynamic(() => Promise.resolve(Navigation), { ssr: false });
