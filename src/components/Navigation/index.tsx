@@ -21,13 +21,13 @@ export default function Navigation() {
     <div className="fixed right-3 max-sm:right-1 top-1/2 transform -translate-y-1/2 flex flex-col space-y-2 z-50">
       <button
       onClick={() => handleNavigation("up")}
-      className="p-2 max-sm:p-1 bg-primary text-white rounded-md shadow hover:bg-primary/85 border-[1px] border-secondary transition"
+      className="p-2 max-sm:p-1 bg-primary text-white rounded-md shadow hover:bg-primary/85 border-[1px] border-secondary transition cursor-pointer"
       >
         <ArrowUp/>
       </button>
       <button
       onClick={() => handleNavigation("down")}
-      className="p-2 max-sm:p-1 bg-primary text-white rounded-md shadow hover:bg-primary/85 border-[0.5px] border-secondary transition"
+      className="p-2 max-sm:p-1 bg-primary text-white rounded-md shadow hover:bg-primary/85 border-[0.5px] border-secondary transition cursor-pointer"
       >
         <ArrowDown/>
       </button>

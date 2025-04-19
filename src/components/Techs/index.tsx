@@ -34,6 +34,7 @@ import Supabase from "../../../public/Icons/supabase.svg";
 
 import Git from "../../../public/Icons/git.svg";
 import Github from "../../../public/Icons/github.svg";
+import TechCard from "./components/TechCard";
 
 export default function Techs() {
   const [windowWidth, setWindowWidth] = useState<number>(0);
@@ -57,7 +58,10 @@ export default function Techs() {
   }
 
   return (
-    <div id="techs" className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,50%_0%,90%_50%,0%_50%) max-[850px]:px-4 max-[850px]:py-4 selection:bg-primary/10">
+    <div
+      id="techs"
+      className="w-full min-h-40 bg-secondary px-14 py-10 flex flex-col items-center justify-center border-primary border-r-8 clip-path:polygon(10%_0%,50%_0%,90%_50%,0%_50%) max-[850px]:px-4 max-[850px]:py-4 selection:bg-primary/10"
+    >
       <div className="w-full gap-x-5 gap-y-10 grid min-[410px]:grid-cols-2 min-[980px]:grid-cols-5">
         <div
           data-aos={"flip-left"}
@@ -71,50 +75,38 @@ export default function Techs() {
           >
             Linguagens
           </h1>
-          <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
-            <Image
+            <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
+            <TechCard
               alt="JavaScript Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={JS}
+              src={"/Icons/javascript.svg"}
+              description="JavaScript is a versatile language used for web development, server-side applications, and more."
             />
-            <Image
+            <TechCard
               alt="TypeScript Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={TS}
+              src={"/Icons/typescript.svg"}
+              description="TypeScript is a superset of JS that adds static typing, enhancing code quality and maintainability."
             />
-            <Image
-              alt="SQL"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={SQL}
+            <TechCard
+              alt="SQL Icon"
+              src={"/Icons/SQL.svg"}
+              description="SQL is a standard language for managing and manipulating relational databases."
             />
-            <Image
+            <TechCard
               alt="React Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={ReactIcon}
+              src={"/Icons/react.svg"}
+              description="ReactJS is a popular JavaScript library for building user interfaces, focusing on component-based architecture and efficient rendering."
             />
-            <Image
+            <TechCard
               alt="React Native Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={ReactNativeIcon}
+              src={"/Icons/react-native.svg"}
+              description="RN is a framework for building mobile apps using React, allowing code sharing between platforms."
             />
-            <Image
+            <TechCard
               alt="NextJS Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={NextJS}
+              src={"/Icons/nextjs.svg"}
+              description="Next.js is a React framework for building fast, server-rendered web applications with ease."
             />
-          </div>
+            </div>
         </div>
         <div
           data-aos={"flip-left"}
@@ -128,29 +120,24 @@ export default function Techs() {
           >
             Estilização
           </h1>
-          <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
-            <Image
+            <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
+            <TechCard
               alt="Styled-Components Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={StyledComponents}
+              src={"/Icons/styled-components.svg"}
+              description="Styled-Components is a library for styling React components using tagged template literals."
             />
-            <Image
+            <TechCard
               alt="Tailwind Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={Tailwind}
+              src={"/Icons/tailwind.svg"}
+              description="Tailwind CSS is a utility-first CSS framework for rapidly building custom designs."
             />
-            <Image
+            <TechCard
               alt="ShadcnUI Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10 p-0.5 rounded-full"
-              src={ShadcnUI}
+              src={"/Icons/shadcn.svg"}
+              description="ShadcnUI is a modern UI library for building accessible and customizable components."
+              className="mt-0.5 w-9 h-9 rounded-full"
             />
-          </div>
+            </div>
         </div>
         <div
           data-aos={"flip-left"}
@@ -164,36 +151,28 @@ export default function Techs() {
           >
             Databases
           </h1>
-          <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
-            <Image
+            <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
+            <TechCard
               alt="PostgreSQL Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={PostgreSQL}
+              src={"/Icons/postgresql.svg"}
+              description="PostgreSQL is a powerful, open-source object-relational database system known for its reliability and feature set."
             />
-            <Image
+            <TechCard
               alt="Supabase Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={Supabase}
+              src={"/Icons/supabase.svg"}
+              description="Supabase is an open-source backend-as-a-service platform that provides a PostgreSQL database and other tools."
             />
-            <Image
+            <TechCard
               alt="Firebase Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={Firebase}
+              src={"/Icons/firebase.svg"}
+              description="Firebase is a platform developed by Google for building mobile and web applications with real-time database capabilities."
             />
-            <Image
+            <TechCard
               alt="MongoDB Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={MongoDB}
+              src={"/Icons/mongodb.svg"}
+              description="MongoDB is a NoSQL database known for its flexibility and scalability, using a document-oriented data model."
             />
-          </div>
+            </div>
         </div>
         <div
           data-aos={"flip-left"}
@@ -207,29 +186,23 @@ export default function Techs() {
           >
             Auth e ORMs
           </h1>
-          <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
-            <Image
+            <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
+            <TechCard
               alt="NextAuth Icon"
-              width={50}
-              height={50}
-              className="h-10 w-[2.375rem] mx-[0.0075]"
-              src={NextAuth}
+              src={"/Icons/next-auth.png"}
+              description="NextAuth.js is a complete open-source authentication solution for Next.js applications."
             />
-            <Image
+            <TechCard
               alt="Prisma Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={Prisma}
+              src={"/Icons/prisma.svg"}
+              description="Prisma is a next-generation ORM for Node.js and TypeScript, focusing on type safety and developer productivity."
             />
-            <Image
+            <TechCard
               alt="Drizzle Kit Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={Drizzle}
+              src={"/Icons/drizzle.svg"}
+              description="Drizzle ORM is a lightweight TypeScript ORM for SQL databases, designed for simplicity and performance."
             />
-          </div>
+            </div>
         </div>
         <div
           data-aos={"flip-left"}
@@ -243,22 +216,18 @@ export default function Techs() {
           >
             Versionamento
           </h1>
-          <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
-            <Image
+            <div className="w-7/12 flex flex-wrap justify-start gap-x-4 gap-y-2">
+            <TechCard
               alt="Git Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={Git}
+              src={"/Icons/git.svg"}
+              description="Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
             />
-            <Image
+            <TechCard
               alt="GitHub Icon"
-              width={50}
-              height={50}
-              className="h-10 w-10"
-              src={Github}
+              src={"/Icons/github.svg"}
+              description="GitHub is a platform for version control and collaboration, allowing developers to host and review code, manage projects, and build software together."
             />
-          </div>
+            </div>
         </div>
       </div>
     </div>
