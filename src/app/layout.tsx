@@ -33,6 +33,9 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content={manifest().theme_color} />
         <meta name="background-color" content={manifest().background_color} />
+        <meta name="description" content={manifest().description} />
+        <meta name="author" content="Victor Lis Bronzo" />
+        <meta name="keywords" content="Victor Lis Bronzo, Portfolio" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
