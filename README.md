@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Victor Lis Bronzo Portfolio
 
-## Getting Started
+Este é um projeto de portfólio desenvolvido com [Next.js](https://nextjs.org), que apresenta informações sobre Victor Lis Bronzo, um desenvolvedor Web/Full-Stack do Brasil. O portfólio inclui seções sobre tecnologias, projetos, informações pessoais e muito mais.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Framework:** [Next.js 15](https://nextjs.org)
+- **Linguagens:** TypeScript, JavaScript
+- **Estilização:** Tailwind CSS, Styled-Components
+- **Bibliotecas:** Zustand, AOS, Framer Motion, Swiper, Radix UI
+- **Banco de Dados:** PostgreSQL, Firebase, Supabase, MongoDB
+- **Outras Ferramentas:** Prisma, Drizzle ORM, NextAuth.js
+
+## Estrutura do Projeto
+
+A estrutura do projeto é organizada da seguinte forma:
+
+```
+src/
+├── app/                # Páginas e rotas do Next.js
+├── components/         # Componentes reutilizáveis
+├── data/               # Dados e gerenciadores de estado
+├── lib/                # Funções utilitárias
+├── @types/             # Tipos TypeScript personalizados
+public/                 # Arquivos estáticos (imagens, ícones, etc.)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Seção de Tecnologias:** Apresenta as tecnologias utilizadas, com descrições e ícones interativos.
+- **Projetos:** Lista projetos desenvolvidos, categorizados por ano e tipo, com links para repositórios e deploys.
+- **Sobre Mim:** Informações pessoais e trajetória acadêmica.
+- **Navegação:** Menu interativo para facilitar a navegação entre seções.
+- **Responsividade:** Layout adaptado para diferentes tamanhos de tela.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Como Executar o Projeto
 
-## Learn More
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Victor-Lis/portfolio.git
+   cd portfolio
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Abra [http://localhost:3000](http://localhost:3000) no navegador para visualizar o projeto.
 
-## Deploy on Vercel
+## Scripts Disponíveis
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev`: Inicia o servidor de desenvolvimento.
+- `npm run build`: Gera a build de produção.
+- `npm run start`: Inicia o servidor de produção.
+- `npm run lint`: Executa o linter para verificar problemas no código.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+O projeto pode ser facilmente implantado na [Vercel](https://vercel.com), a plataforma oficial para Next.js. Para mais detalhes, consulte a [documentação de deploy do Next.js](https://nextjs.org/docs/app/building-your-application/deploying).
+
+## Contato
+
+- **LinkedIn:** [Victor Lis Bronzo](https://www.linkedin.com/in/victor-lis-bronzo)
+- **GitHub:** [Victor-Lis](https://github.com/Victor-Lis)
+
+---
+&copy; Victor Lis Bronzo
