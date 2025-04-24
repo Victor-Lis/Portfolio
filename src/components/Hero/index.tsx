@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div id="hero" className="w-full min-h-section-common bg-primary px-14 pb-7 pt-3 max-[850px]:px-4 max-[850px]:py-4 border-secondary border-l-8 selection:bg-secondary/5">
       <div
-        className="w-full flex items-center justify-center gap-x-10 gap-y-4 mb-5 max-[500px]:items-start max-[500px]:flex-col"
+        className="w-full flex items-center justify-center max-[700px]:items-start flex-wrap gap-x-10 gap-y-4 mb-5 text-nowrap max-[500px]:items-start max-[500px]:flex-col"
         data-aos="fade-down"
       >
         <a
@@ -31,6 +31,17 @@ export default function Hero() {
           <Image alt="Github" src="/Profile/github-personalized-2.svg" height={40} width={40} />
           <h2 className="text-tertiary exo-2-regular text-2xl selection:text-secondary border-b-2 border-secondary">
             Victor-Lis
+          </h2>
+        </a>
+        <a
+          className="flex items-center justify-center gap-x-1 hover:opacity-80 duration-150 cursor-pointer"
+          target="_blank"
+          rel="noreferrer"
+          href="/Profile/Victor Lis Bronzo, Desenvolvedor Front-End e Web.pdf"
+        >
+          <Image alt="Currículo" src="/Profile/cv.svg" height={25} width={40} className="max-h-10"/>
+          <h2 className="text-tertiary exo-2-regular text-2xl selection:text-secondary border-b-2 border-secondary">
+            Currículo
           </h2>
         </a>
       </div>
