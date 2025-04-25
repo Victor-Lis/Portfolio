@@ -16,7 +16,10 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <div id="aboutme" className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-secondary/5">
+    <div
+      id="aboutme"
+      className="w-full min-h-section-common bg-primary px-14 py-10 flex flex-col items-center justify-between border-secondary border-l-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-secondary/5"
+    >
       <Section aosData="fade-left">
         <h1
           className={
@@ -166,8 +169,8 @@ export default function AboutMe() {
           evolução acadêmica.
         </p>
         <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4">
-          É perceptivel a evolução da habilidade e prática do grupo falando de
-          mundo acadêmico quando observamos a diferença entre as produções para{" "}
+          É perceptivel a evolução da habilidade falando de mundo acadêmico
+          quando observamos a diferença entre as produções para{" "}
           <a
             target="_blank"
             rel="noreferrer"
@@ -186,6 +189,50 @@ export default function AboutMe() {
             artigo do TCC
           </a>{" "}
           (produzido ao longo de 2024).
+        </p>
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4 max-md:hidden">
+          Atualmente, estou me adaptando ao ambiente do{" "}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="text-secondary font-normal underline"
+            href="http://bra.ifsp.edu.br/"
+          >
+            IFSP
+          </a>
+          , onde pretendo dar continuidade aos meus estudos e crescer ainda
+          mais.
+        </p>
+      </Section>
+      <Section aosData={fade}>
+        <h1
+          className={
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
+          }
+        >
+          Mundo profissional
+        </h1>
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
+          Atualmente trabalho na {""}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="text-secondary font-normal underline"
+            href="https://github.com/StarSeg"
+          >
+            Global Star Seg
+          </a>
+          , uma empresa de monitoramento.
+        </p>
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto max-lg:hidden">
+          Nela, sou responsável pela construção
+          de aplicações tecnológicas e inovadoras que valorizam ainda mais os
+          produtos da empresa.
+        </p>
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
+          Essa experiência tem sido uma ótima oportunidade
+          para aprender sobre o desenvolvimento de ponta a ponta, abrangendo
+          desde robótica e construção web até práticas de DevOps.
         </p>
       </Section>
       {/* 

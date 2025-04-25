@@ -22,7 +22,7 @@ export default function Topic({ icon, text }: TopicProps) {
   return (
     <button
       type="button"
-      className="min-[380px]:pt-2 bg-primary w-36 h-36 max-[630px]:w-24 max-[630px]:h-24 max-[380px]:w-16 max-[380px]:h-16 rounded-sm flex flex-col items-center min-[380px]:gap-y-2 justify-center hover:bg-primary/85 duration-300"
+      className="min-[380px]:pt-2 bg-primary w-36 h-36 max-[630px]:w-24 max-[630px]:h-24 max-[380px]:w-16 max-[380px]:h-16 rounded-sm flex flex-col items-center min-[380px]:gap-y-2 justify-center hover:scale-110 duration-300 cursor-pointer"
       onClick={handleSetTech}
       onKeyDown={handleSetTech}
     >

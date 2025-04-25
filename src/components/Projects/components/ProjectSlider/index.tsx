@@ -13,36 +13,22 @@ export default function ProjectSlider() {
   const { projectsByTech } = useProjectStore();
 
   const getSlidesPerView = () => {
-    return (window.innerWidth > 1280) ? 3 : "auto"
-  }
+    return window.innerWidth > 1280 ? 3 : "auto";
+  };
 
   return (
-    <div className="triple-slider w-full mx-auto mt-12">
-      <Swiper
-        modules={[EffectCoverflow, Pagination]}
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={getSlidesPerView()} // Exibe 3 slides ao lado do outro
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 50,
-          modifier: 2.5,
-          slideShadows: false,
-        }}
-        pagination={{ clickable: true }}
-        className="swiper-container"
-      >
+    <div
+      id="projects"
+      className="w-full min-h-section-common bg-secondary px-14 py-10 flex flex-col items-center justify-between border-primary border-r-8 max-[1000px]:px-4 max-[1000px]:py-4 selection:bg-primary/10"
+    >
+      <h1 className="uppercase text-primary text-8xl bebas-neue max-[700px]:text-6xl">
+        Projetos
+      </h1>
+      <div className="mt-10 grid gap-8 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {projectsByTech.map((project, index) => (
-          <SwiperSlide
-            key={`${index} ${project.name}`}
-            className="swiper-slide"
-          >
-            <ProjectSlide project={project} />
-          </SwiperSlide>
+          <ProjectSlide key={`${index} ${project.name}`} project={project} />
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 }

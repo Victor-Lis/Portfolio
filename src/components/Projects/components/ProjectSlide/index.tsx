@@ -5,67 +5,51 @@ import Image from "next/image";
 
 export default function ProjectSlide({ project }: { project: ProjectType }) {
   return (
-    <div className="bg-primary bg-image h-80 px-6 py-6 flex flex-col justify-between min-[850px]:w-9/12 min-[1280px]:w-full">
-      <div className="w-full flex justify-between items-baseline">
-        <h2 className="text-blue-500 text-4xl font-bold flex-[2] text-start">
+    <div className="bg-primary p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between h-full max-w-[400px]">
+      <main>
+        <h2 className="text-secondary text-4xl bebas-neue mb-4">
           {project.name}
         </h2>
-        <div className="flex gap-2 items-baseline flex-1 flex-wrap justify-end">
-          {project.techs?.map((tech) => {
-            return (
-              <Image
-                width={25}
-                src={tech.image}
-                alt={tech.name}
-                key={tech.name}
-              />
-            );
-          })}
-        </div>
-      </div>
-      <p className="w-full text-tertiary line-clamp-3">{project.description}</p>
-      <div className="w-full flex flex-col justify-between items-start gap-y-2 text-tertiary text-sm">
+        <p className="text-tertiary text-xl exo-2-regular mb-4">
+            {project.description
+            ? project.description.length > 120
+              ? `${project.description.slice(0, 120)}...`
+              : project.description
+            : "Descrição breve do projeto. Clique abaixo para saber mais."}
+        </p>
+      </main>
+      <footer className="flex items-center justify-start gap-2 mt-4">
+        {project.links.linkedin?.path && (
+          <a
+            href={project.links.linkedin.path}
+            target="_blank"
+            rel="noreferrer"
+            className="scale-100 hover:scale-110 transition-transform duration-300"
+          >
+            <Linkedin color="#32de8a" size={28} />
+          </a>
+        )}
         {project.links.github && (
           <a
             href={project.links.github}
-            className="flex justify-center items-center"
             target="_blank"
             rel="noreferrer"
+            className="scale-100 hover:scale-110 transition-transform duration-300"
           >
             <Github color="#32de8a" size={28} />
-            <span className="underline ml-0.5">
-              {project.links.github.split("/")[3]}/
-              {project.links.github.split("/")[4]}
-            </span>
           </a>
         )}
-        {project.links?.linkedin && (
+        {project.links.deploy && (
           <a
-            href={project.links?.linkedin.path}
-            className="flex justify-center items-center"
+            href={project.links.deploy}
             target="_blank"
             rel="noreferrer"
-          >
-            <Linkedin color="#32de8a" size={28} />
-            <span className="underline ml-1 mt-1.5">
-              {project.links?.linkedin.name}
-            </span>
-          </a>
-        )}
-        {project.links?.deploy && (
-          <a
-            href={project.links?.deploy}
-            className="flex justify-center items-center"
-            target="_blank"
-            rel="noreferrer"
+            className="scale-100 hover:scale-110 transition-transform duration-300"
           >
             <Chrome color="#32de8a" size={28} />
-            <span className="underline ml-1 mt-0.5">
-              {project.links?.deploy.split("/")[2].split(".")[0]}
-            </span>
           </a>
         )}
-      </div>
+      </footer>
     </div>
   );
 }
