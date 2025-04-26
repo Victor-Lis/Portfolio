@@ -23,17 +23,17 @@ export default function AboutMe() {
       <Section aosData="fade-left">
         <h1
           className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48"
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48"
           }
         >
           Tecnologia
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-xl:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-xl:hidden">
           Sempre fui um apaixonado assíduo por qualquer tecnologia e inovação,
           quando mais novo adorava jogar videogames e imaginar como era o
           processo para seu desenvolvimento
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 mt-4">
           Após minha entrada na Etec Prof. Carmine Biagio Tundisi, onde realizei
           meu curso técnico em Desenvolvimento de Sistemas durante{" "}
           <a
@@ -102,7 +102,7 @@ export default function AboutMe() {
           </a>
           ...
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4 max-lg:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 mt-4 max-lg:hidden">
           Mas minha paixão mesmo é para o lado que interage com o usúario,
           entender os pensamentos que passam por sua cabeça, quais padrões,
           cores e tipografias usar, portanto gosto mais do lado Front-End, mas
@@ -113,12 +113,12 @@ export default function AboutMe() {
       <Section aosData={fade}>
         <h1
           className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-[410px]:mr-auto"
           }
         >
           TCC
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-[410px]:mr-auto">
           O{" "}
           <a
             target="_blank"
@@ -156,19 +156,19 @@ export default function AboutMe() {
       <Section aosData="fade-left">
         <h1
           className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48"
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48"
           }
         >
           Mundo Acadêmico
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-lg:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-lg:hidden">
           Após algumas experiências em escrever conteúdos utilizando a linguagem
           acadêmica e por consequência conhecer mais sobre esse mundo, tenho em
           meus pensamentos foco para uma carreira profissional voltada a
           tecnologia, mas também surgiu como um forte interesse da minha parte a
           evolução acadêmica.
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 mt-4">
           É perceptivel a evolução da habilidade falando de mundo acadêmico
           quando observamos a diferença entre as produções para{" "}
           <a
@@ -190,7 +190,7 @@ export default function AboutMe() {
           </a>{" "}
           (produzido ao longo de 2024).
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 mt-4 max-md:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 mt-4 max-md:hidden">
           Atualmente, estou me adaptando ao ambiente do{" "}
           <a
             target="_blank"
@@ -207,12 +207,12 @@ export default function AboutMe() {
       <Section aosData={fade}>
         <h1
           className={
-            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
+            "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-[410px]:mr-auto"
           }
         >
           Mundo profissional
         </h1>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-[410px]:mr-auto">
           Atualmente trabalho na {""}
           <a
             target="_blank"
@@ -224,12 +224,12 @@ export default function AboutMe() {
           </a>
           , uma empresa de monitoramento.
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto max-lg:hidden">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-[410px]:mr-auto max-lg:hidden">
           Nela, sou responsável pela construção
           de aplicações tecnológicas e inovadoras que valorizam ainda mais os
           produtos da empresa.
         </p>
-        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
+        <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-[410px]:mr-auto">
           Essa experiência tem sido uma ótima oportunidade
           para aprender sobre o desenvolvimento de ponta a ponta, abrangendo
           desde robótica e construção web até práticas de DevOps.
@@ -239,15 +239,15 @@ export default function AboutMe() {
         <Section aosData={fade}>
           <h1
             className={
-              "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto"
+              "max-[700px]:text-6xl uppercase text-secondary font-bold text-8xl bebas-neue w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-[410px]:mr-auto"
             }
           >
             Objetivos
           </h1>
-          <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 max-[410px]:mr-auto">
+          <p className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 max-[410px]:mr-auto">
             Tenho como meu objetivo para essa nova etapa:
           </p>
-          <ul className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[400px]:w-10/12 min-w-48 list-disc marker:text-secondary">
+          <ul className="max-[700px]:text-2xl text-tertiary text-4xl exo-2-regular text-justify w-6/12 max-[800px]:w-8/12 max-[420px]:w-10/12 min-w-48 list-disc marker:text-secondary">
             <li className="w-[93%] max-[500px]:w-11/12 ml-auto">
               Ingressar em um curso tecnólogo no próximo ano, já que ainda sou muito novo e até
               aqui o tempo sempre jogou a meu favor
