@@ -2,7 +2,7 @@
 import React from "react";
 import ProjectsYears from "./components/ProjectsYears";
 import ProjectsByTopic from "./components/ProjectsByTopic";
-import ProjectSlider from "./components/ProjectSlider";
+import ProjectSlider from "./components/ProjectsGrid";
 import { useProjectStore } from "@/data/projectManager";
 
 export default function Projects() {
