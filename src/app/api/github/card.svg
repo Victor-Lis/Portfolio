@@ -54,7 +54,7 @@
 
   <!-- Portfolio -->
   <a href="{{portfolio-link}}" target="_blank">
-    <image href="http://localhost:3000/Profile/link.svg" x="160" y="182" width="24" height="24" />
+    <image href="https://victor-lis.vercel.app/Profile/link.svg" x="160" y="182" width="24" height="24" />
     <text x="190" y="198" font-family="Arial" font-size="14" fill="#28D17C">{{portfolio-text}}</text>
   </a>
 
