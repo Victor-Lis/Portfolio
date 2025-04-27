@@ -6,6 +6,7 @@ export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
 
   // Obtendo os parâmetros da URL
+  const photo = searchParams.get("foto") || " ";
   const nome1 = searchParams.get("nome1") || " ";
   const nome2 = searchParams.get("nome2") || " ";
   const nome3 = searchParams.get("nome3") || " ";
@@ -32,6 +33,7 @@ export async function GET(req: Request) {
   svgContent = svgContent
     .replace(/{{background}}/g, background)
     .replace(/{{foreground}}/g, foreground)
+    .replace(/{{foto}}/g, photo)
     .replace(/{{nome1}}/g, nome1)
     .replace(/{{nome2}}/g, nome2)
     .replace(/{{nome3}}/g, nome3)
