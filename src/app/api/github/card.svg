@@ -1,0 +1,67 @@
+<svg width="600" height="260" xmlns="http://www.w3.org/2000/svg" class="svg-card">
+  <style>
+    .svg-card { border-radius: 10px; }
+    .photo { border-radius: 10px; }
+    .background { fill: {{background}}; }
+    .card { fill: {{foreground}}; }
+    .name { font-family: 'Arial Black', sans-serif; font-size: 22px; fill: {{foreground}}; }
+    .subname { font-family: 'Arial Black', sans-serif; font-size: 18px; fill: {{foreground}}; }
+    .title { font-family: 'Arial', sans-serif; font-size: 18px; fill: {{background}}; font-weight: bold; }
+    .info { font-family: 'Arial', sans-serif; font-size: 16px; fill: {{background}}; }
+    .icon { fill: {{background}}; }
+  </style>
+
+  <!-- Fundo -->
+  <rect width="100%" height="100%" class="background"/>
+
+  <!-- Foto com bordas arredondadas -->
+  <defs>
+    <clipPath id="photoClip">
+      <rect x="10" y="15" width="120" height="130" rx="10" ry="10" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#photoClip)">
+    <image href="https://avatars.githubusercontent.com/u/109773129?v=4" x="10" y="15" width="120" height="130" preserveAspectRatio="xMidYMid slice" />
+  </g>
+
+  <!-- Área preta -->
+  <rect x="140" y="0" width="460" height="260" class="card"/>
+
+  <!-- Textos -->
+  <text x="10" y="172" class="name">{{nome1}}</text>
+  <text x="10" y="197" class="name">{{nome2}}</text>
+  <text x="10" y="222" class="name">{{nome3}}</text>
+  <text x="10" y="249.5" class="subname">{{idade}}</text>
+
+  <!-- Conteúdo do Card -->
+
+  <text x="160" y="35" class="title">{{titulo}}</text>
+  <text x="160" y="60" class="info">{{profissao}}</text>
+  <text x="160" y="85" class="info">{{descricao}}</text>
+
+  <!-- Ícones -->
+  <!-- GitHub -->
+  <a href="{{github-link}}" target="_blank">
+    <image href="https://victor-lis.vercel.app/Profile/github-personalized-2.svg" x="160" y="103" width="24" height="24" />
+    <text x="190" y="121" font-family="Arial" font-size="14" fill="#28D17C">{{github-text}}</text>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="{{linkedin-link}}" target="_blank">
+    <image href="https://victor-lis.vercel.app/Profile/linkedin-personalized-2.svg" x="160" y="142.5" width="24" height="24" />
+    <text x="190" y="159.5" font-family="Arial" font-size="14" fill="#28D17C">{{linkedin-text}}</text>
+  </a>
+
+  <!-- Portfolio -->
+  <a href="{{portfolio-link}}" target="_blank">
+    <image href="http://localhost:3000/Profile/link.svg" x="160" y="182" width="24" height="24" />
+    <text x="190" y="198" font-family="Arial" font-size="14" fill="#28D17C">{{portfolio-text}}</text>
+  </a>
+
+  <!-- CV -->
+  <a href="{{cv-link}}" target="_blank">
+    <image href="https://victor-lis.vercel.app/Profile/cv.svg" x="160" y="221.5" width="24" height="24" />
+    <text x="190" y="239" font-family="Arial" font-size="14" fill="#28D17C">{{cv-text}}</text>
+  </a>
+
+</svg>
