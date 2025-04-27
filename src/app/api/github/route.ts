@@ -29,6 +29,21 @@ export async function GET(req: Request) {
   const filePath = path.join(process.cwd(), "src", "app", "api", "github", "card.svg");
   let svgContent = await fs.readFile(filePath, "utf-8");
 
+  // Baixando a imagem da URL fornecida e convertendo para base64
+  if (photo.trim() !== " ") {
+    try {
+      const response = await fetch(photo);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch the photo: ${response.statusText}`);
+      }
+      const buffer = await response.arrayBuffer();
+      const base64Photo = `data:image/jpeg;base64,${Buffer.from(buffer).toString("base64")}`;
+      svgContent = svgContent.replace(/{{foto}}/g, base64Photo);
+    } catch (error) {
+      console.error("Error fetching or converting the photo:", error);
+    }
+  }
+
   // Substituindo os placeholders no SVG
   svgContent = svgContent
     .replace(/{{background}}/g, background)
