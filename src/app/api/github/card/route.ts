@@ -15,11 +15,17 @@ export async function GET(req: Request) {
   const github = searchParams.get("github") || "?github=";
   const photo = searchParams.get("photo")
     ? searchParams.get("photo")
-    : github ? `https://github.com/${github}.png?size=200` : "";
+    : github
+    ? `https://github.com/${github}.png?size=200`
+    : "";
   const linkedin = searchParams.get("linkedin") || "?linkedin=";
   const portfolio = searchParams.get("portfolio") || "?portfolio=";
-  const background = searchParams.get("background") || "#34df8b";
-  const foreground = searchParams.get("foreground") || "#2a2c41";
+  const background = searchParams.get("background")
+    ? `#${searchParams.get("background")}`
+    : "#34df8b";
+  const foreground = searchParams.get("foreground")
+    ? `#${searchParams.get("foreground")}`
+    : "#2a2c41";
 
   const filePath = path.join(
     process.cwd(),
@@ -48,15 +54,10 @@ export async function GET(req: Request) {
     }
   }
 
-  console.log(github)
-  console.log(linkedin)
-  console.log(portfolio)
-
-  // Substituindo os placeholders no SVG
   svgContent = svgContent
-    .replace(/{{background}}/g, background)
-    .replace(/{{foreground}}/g, foreground)
-    .replace(/{{foto}}/g, photo)
+    .replaceAll(/{{background}}/g, background)
+    .replaceAll(/{{foreground}}/g, foreground)
+    .replace(/{{photo}}/g, photo)
     .replace(/{{name1}}/g, name1)
     .replace(/{{name2}}/g, name2)
     .replace(/{{name3}}/g, name3)
@@ -68,7 +69,6 @@ export async function GET(req: Request) {
     .replace(/{{linkedin}}/g, linkedin)
     .replace(/{{portfolio}}/g, portfolio);
 
-  // Retornando o SVG atualizado
   return new NextResponse(svgContent.trim(), {
     status: 200,
     headers: {
