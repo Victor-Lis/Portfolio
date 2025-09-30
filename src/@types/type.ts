@@ -1,1 +1,0 @@
-export type Types = "Web" | "App" | "Back-End" | "Game" | "IoT"
