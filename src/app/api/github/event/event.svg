@@ -75,7 +75,8 @@
 
     <image href="{{photo}}" x="0" y="0" width="300" height="150" clip-path="url(#image-clip-path)" preserveAspectRatio="xMidYMid slice"/>
 
-    <g transform="translate(30, 180)">
+    <g transform="translate(30, 175
+    )">
       <text class="event-title" x="0" y="20">{{name}}</text>
       <text class="event-date" x="0" y="50">{{description}}</text>
       <rect class="decorative-line" x="0" y="62" height="5" rx="2.5"/>
