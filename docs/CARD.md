@@ -47,9 +47,9 @@ Todos os parâmetros são opcionais. Você pode combiná-los como preferir para 
 Aqui está um exemplo com vários parâmetros para demonstrar a customização:
 
 ```markdown
-![](https://victor-lis.vercel.app/api/github/card?title=Analista%20e%20Desenvolvedor%20de%20Sistemas&profession=Full%20Stack%20Developer&description=Apaixonado%20por%20soluções%20criativas!&github=Victor-Lis&name1=Victor&name2=Lis&name3=Bronzo&age=18%20anos&linkedin=victor-lis-bronzo&portfolio=https://victor-lis.vercel.app&background=8e44ad&foreground=ecf0f1&textColor=ffffff&textDark=2c3e50)
+![](https://victor-lis.vercel.app/api/github/card?title=Analista%20e%20Desenvolvedor%20de%20Sistemas&profession=Full%20Stack%20Developer&description=Apaixonado%20por%20soluções%20criativas!&github=Victor-Lis&name1=Victor&name2=Lis&name3=Bronzo&age=18%20anos&linkedin=victor-lis-bronzo&portfolio=https://victor-lis.vercel.app&background=8e44ad&foreground=ecf0f1&textColor=ffffff&textDark=2c3e50&photo=https://victor-lis.vercel.app/Profile/myself.jpg)
 ```
 
 Isso irá gerar o seguinte card:
 
-![](https://victor-lis.vercel.app/api/github/card?title=Analista%20e%20Desenvolvedor%20de%20Sistemas&profession=Full%20Stack%20Developer&description=Apaixonado%20por%20soluções%20criativas!&github=Victor-Lis&name1=Victor&name2=Lis&name3=Bronzo&age=18%20anos&linkedin=victor-lis-bronzo&portfolio=https://victor-lis.vercel.app&background=8e44ad&foreground=ecf0f1&textColor=ffffff&textDark=2c3e50)
+![](https://victor-lis.vercel.app/api/github/card?title=Analista%20e%20Desenvolvedor%20de%20Sistemas&profession=Full%20Stack%20Developer&description=Apaixonado%20por%20soluções%20criativas!&github=Victor-Lis&name1=Victor&name2=Lis&name3=Bronzo&age=18%20anos&linkedin=victor-lis-bronzo&portfolio=https://victor-lis.vercel.app&background=8e44ad&foreground=ecf0f1&textColor=ffffff&textDark=2c3e50&photo=https://victor-lis.vercel.app/Profile/myself.jpg)
