@@ -15,6 +15,7 @@ export async function GET(req: Request) {
   const decorative = searchParams.get("decorative") || "#fff";
   const name = searchParams.get("name") || "?name=";
   const description = searchParams.get("description") || "?description=";
+  const date = searchParams.get("date") || "?date=";
 
   const filePath = path.join(
     process.cwd(),
@@ -52,6 +53,7 @@ export async function GET(req: Request) {
     .replace(/{{photo}}/g, photo)
     .replace(/{{name}}/g, name)
     .replace(/{{description}}/g, description)
+    .replace(/{{date}}/g, date)
 
   return new NextResponse(svgContent.trim(), {
     status: 200,
