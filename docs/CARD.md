@@ -35,8 +35,10 @@ Todos os parâmetros são opcionais. Você pode combiná-los como preferir para 
 | `linkedin`    | O texto para o link do seu perfil no LinkedIn.                                                            | `?linkedin=Victor%20Lis%20Bronzo`                 |
 | `portfolio`   | O texto para o link do seu portfólio.                                                                     | `?portfolio=Meu%20Site`                           |
 | `photo`       | URL para uma foto de perfil personalizada. Substitui a foto do GitHub.                                    | `?photo=https://meusite.com/foto.jpg`             |
-| `background`  | Cor de fundo do card (em hexadecimal, sem o `#`). O padrão é `34df8b`.                                    | `?background=0077b5`                              |
-| `foreground`  | Cor do texto e dos elementos no card (em hexadecimal, sem o `#`). O padrão é `2a2c41`.                      | `?foreground=ffffff`                              |
+| `background`  | Cor de fundo do card (em hexadecimal, sem o `#`). O padrão é `2a2c41`.                                    | `?background=0077b5`                              |
+| `foreground`  | Cor dos elementos principais no card (em hexadecimal, sem o `#`). O padrão é `34df8b`.                    | `?foreground=ffffff`                              |
+| `textColor`   | Cor do texto claro no card (em hexadecimal, sem o `#`). O padrão é `ffffff`.                             | `?textColor=f0f0f0`                               |
+| `textDark`    | Cor do texto escuro no card (em hexadecimal, sem o `#`). O padrão é `2a2c41`.                            | `?textDark=333333`                                |
 
 **Observação:** Para usar espaços e caracteres especiais nos valores dos parâmetros, utilize a codificação de URL (por exemplo, `%20` para espaço).
 
@@ -45,9 +47,9 @@ Todos os parâmetros são opcionais. Você pode combiná-los como preferir para 
 Aqui está um exemplo com vários parâmetros para demonstrar a customização:
 
 ```markdown
-![](https://victor-lis.vercel.app/api/github/card?title=Analista%20e%20Desenvolvedor%20de%20Sistemas&profession=Full%20Stack%20Developer&description=Apaixonado%20por%20soluções%20criativas!&github=Victor-Lis&name1=Victor&name2=Lis&name3=Bronzo&age=18%20anos&linkedin=victor-lis-bronzo&portfolio=https://victor-lis.vercel.app)
+![](https://victor-lis.vercel.app/api/github/card?title=Analista%20e%20Desenvolvedor%20de%20Sistemas&profession=Full%20Stack%20Developer&description=Apaixonado%20por%20soluções%20criativas!&github=Victor-Lis&name1=Victor&name2=Lis&name3=Bronzo&age=18%20anos&linkedin=victor-lis-bronzo&portfolio=https://victor-lis.vercel.app&background=8e44ad&foreground=ecf0f1&textColor=ffffff&textDark=2c3e50)
 ```
 
 Isso irá gerar o seguinte card:
 
-![](https://victor-lis.vercel.app/api/github/card?title=Analista%20e%20Desenvolvedor%20de%20Sistemas&profession=Full%20Stack%20Developer&description=Apaixonado%20por%20soluções%20criativas!&github=Victor-Lis&name1=Victor&name2=Lis&name3=Bronzo&age=18%20anos&linkedin=victor-lis-bronzo&portfolio=https://victor-lis.vercel.app)
+![](https://victor-lis.vercel.app/api/github/card?title=Analista%20e%20Desenvolvedor%20de%20Sistemas&profession=Full%20Stack%20Developer&description=Apaixonado%20por%20soluções%20criativas!&github=Victor-Lis&name1=Victor&name2=Lis&name3=Bronzo&age=18%20anos&linkedin=victor-lis-bronzo&portfolio=https://victor-lis.vercel.app&background=8e44ad&foreground=ecf0f1&textColor=ffffff&textDark=2c3e50)

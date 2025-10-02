@@ -22,9 +22,15 @@ export async function GET(req: Request) {
   const portfolio = searchParams.get("portfolio") || "?portfolio=";
   const background = searchParams.get("background")
     ? `#${searchParams.get("background")}`
-    : "#34df8b";
+    : "#2a2c41";
   const foreground = searchParams.get("foreground")
     ? `#${searchParams.get("foreground")}`
+    : "#34df8b";
+  const textColor = searchParams.get("textColor")
+    ? `#${searchParams.get("textColor")}`
+    : "#ffff";
+  const textDark = searchParams.get("textDark")
+    ? `#${searchParams.get("textDark")}`
     : "#2a2c41";
 
   const filePath = path.join(
@@ -57,6 +63,8 @@ export async function GET(req: Request) {
   svgContent = svgContent
     .replaceAll(/{{background}}/g, background)
     .replaceAll(/{{foreground}}/g, foreground)
+    .replaceAll(/{{text}}/g, textColor)
+    .replaceAll(/{{textDark}}/g, textDark)
     .replace(/{{photo}}/g, photo)
     .replace(/{{name1}}/g, name1)
     .replace(/{{name2}}/g, name2)
