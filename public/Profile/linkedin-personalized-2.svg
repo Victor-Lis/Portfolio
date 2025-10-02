@@ -1,9 +1,0 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
-	<title>linkedin-personalized-svg</title>
-	<defs>
-		<image  width="122" height="122" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6AgMAAAANN693AAAAAXNSR0IB2cksfwAAAAlQTFRFAAAAMt6K+/v7GkZX0gAAAAN0Uk5TAP8AaVI5rAAAAPZJREFUeJzt10EOgyAQBVBY9AieopfoEVyUU8LCI3gfj+DCwofUJswwtdZKGljU1Jfglxk1aNXdFDumUes7z2px+tIXXFldmt5fQHRTYjU3/4l317HkvklsyX2RJ3KC5P5nHngPPbg43tGDZIANTgaMjh6t2Pfev7S+kkv1CwGK9VeGnr6a/q/KzdoMa31CfQ0Or9WmHDOmchGeXuiW8/TCjgkIT4HjBXJ36XsSC5770L/nMWDuz4GABzpu8Ai38Xnn3J9HibBAhPvc+M95WDfDO06HAB86YoeAJznK9g3HQjVv3vzfnR/Nz/a9+0dpfyrtb4X98QP9Yq+KGzOn5QAAAABJRU5ErkJggg=="/>
-	</defs>
-	<style>
-	</style>
-	<use id="img1" href="#img1" x="3" y="3"/>
-</svg>
