@@ -12,6 +12,8 @@
     "@playwright/test": "^1.50.1",
     "@radix-ui/react-dialog": "^1.1.10",
     "@radix-ui/react-hover-card": "^1.1.10",
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
     "aos": "^2.3.4",
     "chrome-aws-lambda": "^10.1.0",
     "class-variance-authority": "^0.7.1",
@@ -25,6 +27,7 @@
     "react-dom": "^18.3.1",
     "swiper": "^11.1.15",
     "tailwind-merge": "^3.2.0",
+    "three": "^0.181.0",
     "zustand": "^5.0.3"
   },
   "devDependencies": {
@@ -33,6 +36,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.181.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

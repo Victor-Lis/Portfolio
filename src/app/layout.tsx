@@ -38,7 +38,7 @@ export default function RootLayout({
         <meta name="author" content="Victor Lis Bronzo" />
         <meta name="keywords" content="Victor Lis Bronzo, Portfolio" />
       </head>
-      {children}
+      <body className="dark">{children}</body>
     </html>
   );
 }
